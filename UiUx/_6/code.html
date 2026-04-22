@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>إعدادات النظام - الخدمة الذاتية</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#edeeef",
+                      "secondary-container": "#9cb4fe",
+                      "surface-container-highest": "#e1e3e4",
+                      "surface-variant": "#e1e3e4",
+                      "surface-tint": "#904d00",
+                      "outline-variant": "#ddc1ae",
+                      "on-primary-fixed": "#2f1500",
+                      "on-tertiary-fixed-variant": "#004c6c",
+                      "inverse-surface": "#2e3132",
+                      "on-secondary-fixed": "#00174a",
+                      "on-error": "#ffffff",
+                      "surface": "#f8f9fa",
+                      "secondary": "#435b9f",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-low": "#f3f4f5",
+                      "on-surface-variant": "#564334",
+                      "surface-container-high": "#e7e8e9",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed": "#dbe1ff",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#ffb77d",
+                      "on-primary-container": "#623200",
+                      "on-surface": "#191c1d",
+                      "primary-fixed": "#ffdcc3",
+                      "on-secondary-fixed-variant": "#2a4386",
+                      "primary-fixed-dim": "#ffb77d",
+                      "secondary-fixed-dim": "#b3c5ff",
+                      "on-tertiary-container": "#004360",
+                      "on-background": "#191c1d",
+                      "on-secondary": "#ffffff",
+                      "background": "#f8f9fa",
+                      "tertiary-fixed-dim": "#85cfff",
+                      "on-error-container": "#93000a",
+                      "outline": "#897362",
+                      "tertiary": "#00658f",
+                      "on-tertiary-fixed": "#001e2e",
+                      "surface-bright": "#f8f9fa",
+                      "on-secondary-container": "#2a4486",
+                      "on-primary-fixed-variant": "#6e3900",
+                      "inverse-on-surface": "#f0f1f2",
+                      "surface-container-lowest": "#ffffff",
+                      "primary": "#904d00",
+                      "tertiary-fixed": "#c7e7ff",
+                      "primary-container": "#ff8c00",
+                      "tertiary-container": "#00b5fc",
+                      "surface-dim": "#d9dadb",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body": [
+                              "Work Sans"
+                      ],
+                      "label": [
+                              "Work Sans"
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa; /* surface */
+        }
+        .headline-text {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-gray-900/80 backdrop-blur-xl no-border shadow-sm shadow-black/5 flex justify-between items-center px-6 py-4 rtl">
+<button class="text-orange-600 dark:text-orange-400 transition-all duration-300 ease-in-out active:scale-95 hover:bg-orange-50 dark:hover:bg-orange-900/20 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl text-orange-600 dark:text-orange-400">إعدادات النظام</h1>
+<div class="h-10 w-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-primary/20 shadow-sm transition-all duration-300 ease-in-out active:scale-95 hover:bg-orange-50 cursor-pointer">
+<img alt="Profile Photo" class="w-full h-full object-cover" data-alt="close up professional portrait of a smiling man with short dark hair wearing a light blue collared shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWHwe0cWVRYoNbuYIA3dw6MIZ81mWUc8r79A8ZK1kC42DzTJNSbi7UFUs8u44UE-FlXleUd12MOgkBlMaVfPbZ7tS7ACBCkkuBnBfuKy9EhNNMOUWpaaBNlsICEaL5H22Bq58cvdoTB-bPAO_-z8MtWwuMVopaGGSK8VDRkazqjQGiw-UYmDBYuGBVnl2odGYaUdFVKc1Kxkl_J5_g_I04hy24-NvJpZe2O7zR1hPdxI91gCnr38Ur0wwUj8erXcech8uy3kbHoBqH"/>
+</div>
+</header>
+<!-- SideNav (Web) - Hidden on Mobile -->
+<aside class="hidden md:flex fixed right-0 top-0 h-full w-80 bg-slate-50 dark:bg-gray-950 shadow-2xl z-[60] flex-col p-6 rtl transition-colors duration-200">
+<div class="flex items-center gap-4 mb-10 pb-6 border-b border-surface-container-high/50">
+<div class="h-12 w-12 rounded-full overflow-hidden border-2 border-primary/20 shadow-sm">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="close up professional portrait of a smiling man with short dark hair wearing a light blue collared shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW9nT_ATklypaLNDhWt8vhkpa3G5zmYeeCP7mb8UAXxPu5Cu9AhESema-F5fZvv7pY_dpF6dbJ-Wk0cLDaQwXOEIbX6A5HOmMIgQH7Fqtbl6w6i3SId5De1czwrOKvkXikUZNL3UNGOFGU2DoVj2-DgznwGbxuwwIeZLYDPym3Hi9AtxT8EsLSSX5zGPhQJjvTA1HpFA1ikV6OrwYJHrBAksOjA8LX8EeF4PTCgx_ZabVDS2OxxXFplaAYsfaI5nmlThrdmz1OjfOH"/>
+</div>
+<div>
+<h2 class="font-['Plus_Jakarta_Sans'] text-right font-bold text-lg text-on-surface">أحمد المحمد</h2>
+<p class="text-sm text-on-surface-variant font-medium">مدير النظام</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-blue-900 dark:text-blue-200 hover:bg-orange-50 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="font-medium">لوحة التحكم</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-blue-900 dark:text-blue-200 hover:bg-orange-50 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+<span class="font-medium">الفروع</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-blue-900 dark:text-blue-200 hover:bg-orange-50 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+<span class="font-medium">الأقسام</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-orange-600 text-white shadow-md shadow-orange-600/20 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span>
+<span class="font-medium font-bold">الصلاحيات</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-blue-900 dark:text-blue-200 hover:bg-orange-50 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined text-[20px]">contact_support</span>
+<span class="font-medium">الدعم</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pt-24 px-6 max-w-4xl mx-auto md:mr-80 md:px-10">
+<!-- Hero Summary Section (High-End Editorial Style) -->
+<section class="mb-10 mt-4 relative overflow-hidden rounded-[24px] bg-gradient-to-br from-primary to-primary-container text-white p-8 shadow-[0_8px_24px_rgba(144,77,0,0.15)] flex flex-col items-start min-h-[160px]">
+<!-- Abstract Decor -->
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -left-5 -bottom-5 w-32 h-32 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 w-full flex justify-between items-center">
+<div>
+<h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl mb-2">إدارة متقدمة</h2>
+<p class="text-white/90 font-medium max-w-[250px] leading-relaxed">تحكم كامل في إعدادات المؤسسة والهيكل التنظيمي بمرونة عالية.</p>
+</div>
+<div class="h-16 w-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">settings_suggest</span>
+</div>
+</div>
+</section>
+<!-- Configuration Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+<!-- Card: Company Settings -->
+<button class="group flex flex-col bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 relative overflow-hidden text-right border border-outline-variant/15">
+<div class="flex justify-between items-start w-full mb-8">
+<div class="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">business</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary transition-colors text-2xl rotate-180">arrow_forward</span>
+</div>
+<h3 class="font-bold text-xl text-on-surface mb-2 font-['Plus_Jakarta_Sans']">إعدادات الشركة</h3>
+<p class="text-sm text-on-surface-variant">البيانات الأساسية والهوية المؤسسية</p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary-container transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+</button>
+<!-- Card: Attendance Rules -->
+<button class="group flex flex-col bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 relative overflow-hidden text-right border border-outline-variant/15">
+<div class="flex justify-between items-start w-full mb-8">
+<div class="h-14 w-14 rounded-full bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant group-hover:text-secondary transition-colors text-2xl rotate-180">arrow_forward</span>
+</div>
+<h3 class="font-bold text-xl text-on-surface mb-2 font-['Plus_Jakarta_Sans']">إعدادات الدوام</h3>
+<p class="text-sm text-on-surface-variant">قواعد الحضور والانصراف والتأخير</p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-secondary-container transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+</button>
+<!-- Card: Notification Settings -->
+<button class="group flex flex-col bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 relative overflow-hidden text-right border border-outline-variant/15">
+<div class="flex justify-between items-start w-full mb-8">
+<div class="h-14 w-14 rounded-full bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant group-hover:text-tertiary transition-colors text-2xl rotate-180">arrow_forward</span>
+</div>
+<h3 class="font-bold text-xl text-on-surface mb-2 font-['Plus_Jakarta_Sans']">إعدادات الإشعارات</h3>
+<p class="text-sm text-on-surface-variant">تخصيص التنبيهات والرسائل</p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-tertiary to-tertiary-container transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+</button>
+<!-- Card: GPS Settings -->
+<button class="group flex flex-col bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 relative overflow-hidden text-right border border-outline-variant/15">
+<div class="flex justify-between items-start w-full mb-8">
+<div class="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary transition-colors text-2xl rotate-180">arrow_forward</span>
+</div>
+<h3 class="font-bold text-xl text-on-surface mb-2 font-['Plus_Jakarta_Sans']">إعدادات GPS</h3>
+<p class="text-sm text-on-surface-variant">نطاقات التغطية وتتبع المواقع</p>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary-container transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+</button>
+</div>
+<h3 class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-on-surface mb-6 px-2">الهيكل التنظيمي</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-20">
+<!-- Card: Branches -->
+<button class="group flex items-center bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 border border-outline-variant/15 w-full text-right gap-4">
+<div class="h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-on-surface font-['Plus_Jakarta_Sans']">الفروع</h4>
+<p class="text-xs text-on-surface-variant">إدارة مواقع العمل المتعددة</p>
+</div>
+<span class="material-symbols-outlined text-surface-variant group-hover:text-secondary transition-colors rotate-180">chevron_left</span>
+</button>
+<!-- Card: Departments -->
+<button class="group flex items-center bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 border border-outline-variant/15 w-full text-right gap-4">
+<div class="h-12 w-12 rounded-full bg-tertiary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-2xl" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-on-surface font-['Plus_Jakarta_Sans']">الأقسام</h4>
+<p class="text-xs text-on-surface-variant">تنظيم الهياكل الإدارية</p>
+</div>
+<span class="material-symbols-outlined text-surface-variant group-hover:text-tertiary transition-colors rotate-180">chevron_left</span>
+</button>
+<!-- Card: Shifts -->
+<button class="group flex items-center bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 border border-outline-variant/15 w-full text-right gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">pending_actions</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-on-surface font-['Plus_Jakarta_Sans']">الورديات</h4>
+<p class="text-xs text-on-surface-variant">جدولة نوبات العمل</p>
+</div>
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary transition-colors rotate-180">chevron_left</span>
+</button>
+<!-- Card: Permissions -->
+<button class="group flex items-center bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 border border-outline-variant/15 w-full text-right gap-4 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-2 h-full bg-primary rounded-r-xl"></div>
+<div class="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mr-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">vpn_key</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-lg text-on-surface font-['Plus_Jakarta_Sans'] text-primary">الصلاحيات</h4>
+<p class="text-xs text-on-surface-variant">إدارة أدوار المستخدمين</p>
+</div>
+<span class="material-symbols-outlined text-primary transition-colors rotate-180">chevron_left</span>
+</button>
+</div>
+<footer class="mt-auto pt-8 pb-12 text-center bg-slate-50/50">
+<div class="border-t pt-8 border-blue-900" style="border-top-width: 2px;">
+<p class="text-sm font-medium font-['Cairo'] text-blue-900">
+      جميع الحقوق محفوظة @2026 - فؤاد الأصبحي
+    </p>
+</div>
+</footer></main>
+<!-- BottomNavBar (Mobile) - Hidden on Web -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 rtl bg-white/80 dark:bg-gray-800/80 backdrop-blur-2xl rounded-t-[1.5rem] shadow-[0_-8px_24px_rgba(0,0,0,0.06)] tonal-layering-surface-container-low">
+<button class="flex flex-col items-center justify-center text-blue-900/60 dark:text-white/60 px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 scale-110 transition-transform rounded-[1.5rem]">
+<span class="material-symbols-outlined mb-1 text-[24px]">home</span>
+<span class="text-xs font-medium font-['Cairo']">الرئيسية</span>
+</button>
+<button class="flex flex-col items-center justify-center text-blue-900/60 dark:text-white/60 px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 scale-110 transition-transform rounded-[1.5rem]">
+<span class="material-symbols-outlined mb-1 text-[24px]">history_edu</span>
+<span class="text-xs font-medium font-['Cairo']">الطلبات</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-orange-100 dark:bg-orange-900/40 text-orange-600 rounded-[1.5rem] px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined mb-1 text-[24px]" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="text-xs font-bold font-['Cairo']">الإعدادات</span>
+</button>
+<button class="flex flex-col items-center justify-center text-blue-900/60 dark:text-white/60 px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 scale-110 transition-transform rounded-[1.5rem]">
+<span class="material-symbols-outlined mb-1 text-[24px]">person</span>
+<span class="text-xs font-medium font-['Cairo']">الحساب</span>
+</button>
+</nav>
+</body></html>

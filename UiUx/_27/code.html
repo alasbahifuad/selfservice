@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>إعدادات معايير التقييم</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8f9fa; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e1e3e4; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d9dadb; 
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#623200",
+                        "secondary-container": "#9cb4fe",
+                        "secondary": "#435b9f",
+                        "outline": "#897362",
+                        "primary": "#904d00",
+                        "tertiary-fixed": "#c7e7ff",
+                        "inverse-primary": "#ffb77d",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "primary-container": "#ff8c00",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "on-background": "#191c1d",
+                        "tertiary-container": "#00b5fc",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#00658f",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "secondary-fixed": "#dbe1ff",
+                        "primary-fixed": "#ffdcc3",
+                        "on-secondary-container": "#2a4486",
+                        "on-primary-fixed": "#2f1500",
+                        "surface-container": "#edeeef",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "primary-fixed-dim": "#ffb77d",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e7e8e9",
+                        "surface": "#f8f9fa",
+                        "on-tertiary-container": "#004360",
+                        "background": "#f8f9fa",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "outline-variant": "#ddc1ae",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#564334",
+                        "surface-tint": "#904d00",
+                        "on-secondary-fixed": "#00174a",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem", /* Updated to match guidelines */
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["IBM Plex Sans Arabic", "sans-serif"],
+                        "body": ["Cairo", "sans-serif"],
+                        "label": ["Cairo", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col md:flex-row pb-24 md:pb-0 overflow-x-hidden">
+<!-- Web Navigation Drawer (Hidden on Mobile) -->
+<nav class="hidden md:flex flex-col h-screen w-80 bg-slate-50 dark:bg-slate-950 rounded-l-3xl shadow-2xl shadow-black/10 transition-all duration-200 ease-in-out text-right sticky top-0 shrink-0 z-40">
+<!-- Header Profile -->
+<div class="p-6 flex flex-col items-end gap-4 bg-surface-container-low rounded-tl-3xl">
+<img alt="صورة المستخدم" class="w-16 h-16 rounded-full object-cover shadow-sm ring-2 ring-primary-container/30" data-alt="professional portrait of a middle-eastern man in business attire, clean background, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBERJjVERGrmWYc6dlyZ5N3pNba3AQu-PXjNKfLoj_35SRi49L1Zzb1TmnO-0qStCn-IDNUtmZAD-8Myfq5jKtRqBchPOX41_J5Bf_voyCxovscY9QOSnIaA06mZqAOoBaayOhPbIDernkQQj8ZqP4xZ7fsb_hBbq-MrryfltNHRH72L5Aqhmq1PertPYIwBL_7XQSMpPaCgpScV6TMxGQP6rmd5j7GaoPlw-l_3c7FJpDviWpNISadm-HVU_wvajUme2Sdl28EkTbi"/>
+<div class="text-right">
+<h2 class="text-blue-900 font-bold font-headline text-lg">أحمد محمد</h2>
+<p class="text-slate-500 text-sm">مدير قسم التقنية</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 overflow-y-auto py-4 flex flex-col gap-2">
+<a class="text-slate-700 dark:text-slate-300 mx-2 flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 font-['Cairo'] text-base transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">person</span>
+<span>الملف الشخصي</span>
+</a>
+<a class="text-slate-700 dark:text-slate-300 mx-2 flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 font-['Cairo'] text-base transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">payments</span>
+<span>كشف الراتب</span>
+</a>
+<a class="text-slate-700 dark:text-slate-300 mx-2 flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 font-['Cairo'] text-base transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">event</span>
+<span>الإجازات</span>
+</a>
+<a class="text-slate-700 dark:text-slate-300 mx-2 flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 font-['Cairo'] text-base transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">analytics</span>
+<span>تقييم الأداء</span>
+</a>
+<!-- Active State Navigation -->
+<a class="bg-orange-500 text-white rounded-xl mx-2 flex items-center gap-4 px-4 py-3 font-['Cairo'] text-base shadow-sm" href="#">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-bold">الإعدادات</span>
+</a>
+<a class="text-slate-700 dark:text-slate-300 mx-2 flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 font-['Cairo'] text-base transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">support_agent</span>
+<span>الدعم الفني</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col w-full relative">
+<!-- TopAppBar (Visible on both, adapted for content context) -->
+<header class="docked full-width top-0 rounded-b-3xl bg-orange-500 dark:bg-orange-600 shadow-lg shadow-orange-900/20 z-30 sticky flex justify-between items-center w-full px-6 py-4 flex-row-reverse transition-transform duration-300">
+<!-- Brand / Headline -->
+<div class="flex items-center gap-3">
+<h1 class="text-white font-black text-xl font-headline tracking-tight text-right">الخدمة الذاتية</h1>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-white/20 overflow-hidden ring-2 ring-white/50 cursor-pointer hover:ring-white transition-all md:hidden">
+<img alt="صورة الموظف الشخصية" class="w-full h-full object-cover" data-alt="professional portrait of a middle-eastern man in business attire, clean background, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDix_WHnt3HV04IPwhqkxT8UEZLYt81JkKKNBj1X_dBWhVJp0r2wRRfnZSoKaiWUFLmblTfOLBa-ikqUPmljpD2ZDa-bd-oGc2rZoSgSHz09Z6otekeu1YCVIcRx9x8kTqL0TxbCe2kMKtaBkO7y7lvRSnONWO0vz-n9m3Sow--FRE9VQo4cf5pjPddrJTrpdQhZ1oV8fB5-wOEO4M16wn1azbUKj-Wqw2SFZWNrSivulMjOr1fYw6Jonip4bjeBwI_BpMttpA6xjQD"/>
+</div>
+</div>
+</header>
+<!-- Content Canvas -->
+<div class="p-6 md:p-10 w-full max-w-5xl mx-auto flex-1 flex flex-col gap-8">
+<!-- Page Header -->
+<div class="flex flex-col gap-2">
+<h2 class="text-3xl md:text-4xl font-headline font-bold text-on-surface">إعدادات معايير التقييم</h2>
+<p class="text-on-surface-variant font-body text-lg max-w-2xl">قم بتكوين أوزان المعايير ومسميات مستويات الأداء لضمان تقييم دقيق وشفاف.</p>
+</div>
+<!-- Main Settings Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Criteria Weights Column (Spans 2 columns on lg) -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<!-- Card: Criteria Setup -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col gap-8 shadow-[0_8px_24px_rgba(25,28,29,0.04)] relative overflow-hidden group">
+<!-- Decorative Header Gradient Line -->
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-l from-primary to-primary-container"></div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-1">
+<h3 class="text-2xl font-headline font-bold text-on-surface">أوزان المعايير</h3>
+<p class="text-sm text-on-surface-variant">يجب أن يكون مجموع الأوزان 100%</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl">balance</span>
+</div>
+</div>
+<!-- Progress Bar for Total Weight -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold">
+<span class="text-on-surface-variant">المجموع الحالي:</span>
+<span class="text-primary-container">100%</span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-l from-primary to-primary-container rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Criteria List -->
+<div class="flex flex-col gap-4">
+<!-- Criterion 1 -->
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-xl">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+<div class="flex-1">
+<label class="block text-base font-bold text-on-surface mb-1">جودة العمل</label>
+<p class="text-xs text-on-surface-variant">دقة وإتقان المهام المنجزة</p>
+</div>
+<div class="w-24 relative">
+<input aria-label="نسبة جودة العمل" class="w-full bg-surface-container-high border-none rounded-lg text-center font-bold text-on-surface py-2 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="number" value="40"/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">%</span>
+</div>
+</div>
+<!-- Criterion 2 -->
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-xl">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<div class="flex-1">
+<label class="block text-base font-bold text-on-surface mb-1">الانضباط والالتزام</label>
+<p class="text-xs text-on-surface-variant">الحضور واحترام المواعيد النهائية</p>
+</div>
+<div class="w-24 relative">
+<input aria-label="نسبة الانضباط والالتزام" class="w-full bg-surface-container-high border-none rounded-lg text-center font-bold text-on-surface py-2 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="number" value="30"/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">%</span>
+</div>
+</div>
+<!-- Criterion 3 -->
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-xl">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div class="flex-1">
+<label class="block text-base font-bold text-on-surface mb-1">العمل الجماعي</label>
+<p class="text-xs text-on-surface-variant">التعاون مع الزملاء ومشاركة المعرفة</p>
+</div>
+<div class="w-24 relative">
+<input aria-label="نسبة العمل الجماعي" class="w-full bg-surface-container-high border-none rounded-lg text-center font-bold text-on-surface py-2 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="number" value="30"/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">%</span>
+</div>
+</div>
+<!-- Add New Criterion Button -->
+<button class="mt-2 flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-dashed border-outline-variant hover:bg-surface-container-low text-secondary font-bold transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+                                إضافة معيار جديد
+                            </button>
+</div>
+</div>
+</div>
+<!-- Rating Scale Column -->
+<div class="lg:col-span-1 flex flex-col gap-6">
+<!-- Card: Rating Labels -->
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col gap-6 shadow-[0_8px_24px_rgba(25,28,29,0.04)] relative overflow-hidden group h-full">
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-l from-secondary to-secondary-container"></div>
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-headline font-bold text-on-surface">مسميات النجوم</h3>
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Star 5 -->
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-container text-white font-bold shrink-0">5</div>
+<input aria-label="مسمى تقييم 5 نجوم" class="flex-1 bg-surface-container-high border-none rounded-lg font-bold text-on-surface py-2 px-4 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="text" value="استثنائي"/>
+</div>
+<!-- Star 4 -->
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant font-bold shrink-0">4</div>
+<input aria-label="مسمى تقييم 4 نجوم" class="flex-1 bg-surface-container-high border-none rounded-lg font-bold text-on-surface py-2 px-4 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="text" value="يفوق التوقعات"/>
+</div>
+<!-- Star 3 -->
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant font-bold shrink-0">3</div>
+<input aria-label="مسمى تقييم 3 نجوم" class="flex-1 bg-surface-container-high border-none rounded-lg font-bold text-on-surface py-2 px-4 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="text" value="يقابل التوقعات"/>
+</div>
+<!-- Star 2 -->
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant font-bold shrink-0">2</div>
+<input aria-label="مسمى تقييم نجمتين" class="flex-1 bg-surface-container-high border-none rounded-lg font-bold text-on-surface py-2 px-4 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="text" value="لا يقابل التوقعات"/>
+</div>
+<!-- Star 1 -->
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-error-container text-error font-bold shrink-0">1</div>
+<input aria-label="مسمى تقييم نجمة واحدة" class="flex-1 bg-surface-container-high border-none rounded-lg font-bold text-on-surface py-2 px-4 focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" type="text" value="أقل من المتوقع"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons Area -->
+<div class="flex flex-col sm:flex-row justify-end gap-4 mt-4 mb-8">
+<button class="py-3 px-6 rounded-xl text-on-surface-variant bg-transparent hover:bg-surface-container-low font-bold transition-colors text-center">
+                    إلغاء
+                </button>
+<button class="py-3 px-8 rounded-xl bg-gradient-to-l from-primary to-primary-container text-white font-bold shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] hover:opacity-90 transition-opacity text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">save</span>
+                    حفظ التغييرات
+                </button>
+</div>
+</div>
+</main>
+<!-- Mobile Bottom NavBar (Visible only on md:hidden) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 flex-row-reverse bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-t-[2rem] shadow-[0_-8px_24px_rgba(0,0,0,0.06)] md:hidden">
+<!-- Navigation Items -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-orange-500 tap-highlight-transparent transition-transform duration-300 w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">home</span>
+<span class="font-['Cairo'] text-[10px] font-medium">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-orange-500 tap-highlight-transparent transition-transform duration-300 w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">description</span>
+<span class="font-['Cairo'] text-[10px] font-medium">الطلبات</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-orange-500 tap-highlight-transparent transition-transform duration-300 w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">star</span>
+<span class="font-['Cairo'] text-[10px] font-medium">التقييم</span>
+</a>
+<!-- Active Nav Item based on Intent (Settings) -->
+<a class="flex flex-col items-center justify-center text-orange-600 bg-orange-50 rounded-2xl px-4 py-2 tap-highlight-transparent transition-transform duration-300 min-w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Cairo'] text-xs font-bold">الإعدادات</span>
+</a>
+</nav>
+</body></html>

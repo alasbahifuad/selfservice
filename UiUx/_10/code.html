@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>الخدمة الذاتية - Splash Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Work+Sans:wght@400;500;600&amp;family=Cairo:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "tertiary": "#00658f",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#9cb4fe",
+                        "outline": "#897362",
+                        "on-background": "#191c1d",
+                        "tertiary-fixed": "#c7e7ff",
+                        "surface-tint": "#904d00",
+                        "outline-variant": "#ddc1ae",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#2f1500",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#00b5fc",
+                        "primary-container": "#ff8c00",
+                        "surface-container": "#edeeef",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#2a4486",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "inverse-primary": "#ffb77d",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb77d",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#564334",
+                        "inverse-surface": "#2e3132",
+                        "surface": "#f8f9fa",
+                        "secondary": "#435b9f",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "on-primary-container": "#623200",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "surface-dim": "#d9dadb",
+                        "primary": "#904d00",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-tertiary-container": "#004360",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#00174a",
+                        "primary-fixed": "#ffdcc3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Cairo", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen bg-gradient-to-br from-primary to-primary-container flex items-center justify-center m-0 p-0 font-body overflow-hidden relative">
+<!-- Decorative ambient shapes for depth -->
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+<div class="absolute -top-[20%] -right-[10%] w-[60%] h-[60%] rounded-full bg-white/5 blur-3xl"></div>
+<div class="absolute -bottom-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-black/5 blur-3xl"></div>
+</div>
+<!-- Main Splash Content -->
+<div class="relative z-10 flex flex-col items-center justify-center text-center p-8">
+<!-- Icon Container -->
+<div class="mb-8 relative flex items-center justify-center">
+<!-- Outer Glow / Halo -->
+<div class="absolute inset-0 bg-white/20 rounded-full blur-2xl scale-150"></div>
+<!-- Icon Background -->
+<div class="bg-white/10 p-6 rounded-[2rem] shadow-[0_8px_32px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/20 relative z-10">
+<span class="material-symbols-outlined text-[5rem] md:text-[6rem] text-white block">
+                    support_agent
+                </span>
+</div>
+</div>
+<!-- Typography -->
+<h1 class="font-headline font-extrabold text-5xl md:text-6xl text-white tracking-tight drop-shadow-md mb-4">
+            الخدمة الذاتية
+        </h1>
+<p class="font-label text-white/80 text-lg md:text-xl font-medium tracking-wide max-w-sm">
+            بوابتك لإدارة مهامك بكل سهولة ومرونة
+        </p>
+<!-- Optional subtle loading indicator or version text (commented out but structurally present if needed) -->
+<!-- <div class="mt-16 text-white/50 text-sm font-label flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm animate-spin">refresh</span>
+            جاري التحميل...
+        </div> -->
+</div>
+<footer class="absolute bottom-0 left-0 w-full text-center z-10 px-4 py-8 bg-white/5 backdrop-blur-sm">
+<div class="w-24 h-px bg-[#00174a] mx-auto mb-4 opacity-30"></div><p class="font-label text-sm md:text-base font-medium text-[#00174a]">
+        جميع الحقوق محفوظة @2026 - فؤاد الأصبحي
+    </p>
+</footer></body></html>

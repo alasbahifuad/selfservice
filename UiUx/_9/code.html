@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leaves Screen - The Fluid Administrative Experience</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#004c6c",
+                    "on-primary-fixed-variant": "#6e3900",
+                    "tertiary": "#00658f",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#9cb4fe",
+                    "outline": "#897362",
+                    "on-background": "#191c1d",
+                    "tertiary-fixed": "#c7e7ff",
+                    "surface-tint": "#904d00",
+                    "outline-variant": "#ddc1ae",
+                    "on-secondary-fixed-variant": "#2a4386",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed": "#2f1500",
+                    "secondary-fixed": "#dbe1ff",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#00b5fc",
+                    "primary-container": "#ff8c00",
+                    "surface-container": "#edeeef",
+                    "surface-container-high": "#e7e8e9",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#2a4486",
+                    "on-error-container": "#93000a",
+                    "background": "#f8f9fa",
+                    "inverse-primary": "#ffb77d",
+                    "surface-bright": "#f8f9fa",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#ffb77d",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#564334",
+                    "inverse-surface": "#2e3132",
+                    "surface": "#f8f9fa",
+                    "secondary": "#435b9f",
+                    "secondary-fixed-dim": "#b3c5ff",
+                    "on-primary-container": "#623200",
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary-fixed-dim": "#85cfff",
+                    "surface-dim": "#d9dadb",
+                    "primary": "#904d00",
+                    "surface-variant": "#e1e3e4",
+                    "on-tertiary-fixed": "#001e2e",
+                    "on-tertiary-container": "#004360",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#00174a",
+                    "primary-fixed": "#ffdcc3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": ["IBM Plex Sans Arabic", "Plus Jakarta Sans", "sans-serif"],
+                    "body": ["Cairo", "Work Sans", "sans-serif"],
+                    "label": ["Cairo", "Work Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Cairo', 'Work Sans', sans-serif;
+            background-color: #f8f9fa; /* surface */
+            color: #191c1d; /* on-surface */
+        }
+        .font-headline {
+            font-family: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Custom Scrollbar for better Web experience if needed, though mobile focused */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d9dadb; /* surface-dim */
+            border-radius: 4px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-orange-500 dark:bg-orange-600 text-white dark:text-white font-['Plus_Jakarta_Sans'] font-bold text-lg docked full-width top-0 rounded-b-none shadow-[0_8px_24px_rgba(25,28,29,0.06)] z-40 sticky">
+<div class="flex flex-row-reverse justify-between items-center w-full px-6 py-4">
+<!-- Leading: Avatar -->
+<div class="flex-shrink-0">
+<img alt="صورة الموظف" class="w-10 h-10 rounded-full border-2 border-white/20 object-cover" data-alt="professional headshot of a smiling man in a modern office setting, soft natural lighting, shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0EbIOVj0gsS6bsozpKzu-CqLz1FFMremPB34yqvYNPRj1y2ttzSrFjj8UPdnmokYiwtniabr6lZ5st8GfQu7boEk0FJ05w9o-qgwaErrWH47Hbq3Rjz09xc7q2fgz0a9lChwrLATiPplg-uQ1jyFd3Z3IJrJhVj3jSSPh4pnBY2LAluObrsRLRfH06xMRXtWYcSeSQ8J5AqHmuyWKLw9e8s_DfcKLPbRKVe1Dpo-xWV3sLbMOjzHHE4AFeptes8b8l-oF_xV283hu"/>
+</div>
+<!-- Headline -->
+<div class="flex-1 text-center font-headline text-xl font-black text-white">
+                الخدمة الذاتية
+            </div>
+<!-- Trailing: Icon -->
+<button aria-label="Settings" class="flex-shrink-0 p-2 rounded-full hover:bg-orange-400 dark:hover:bg-orange-500 active:scale-95 transition-all duration-200">
+<span class="material-symbols-outlined text-white text-2xl leading-none">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full max-w-4xl mx-auto px-6 py-8 pb-32 flex flex-col gap-8">
+<!-- Page Title & Intro -->
+<section class="flex flex-col gap-2">
+<h1 class="font-headline text-3xl md:text-4xl font-bold text-on-surface">إدارة الإجازات</h1>
+<p class="text-on-surface-variant text-base md:text-lg">قدم على إجازة جديدة أو تابع حالة طلباتك السابقة.</p>
+</section>
+<!-- Balance Display (Hero Card) -->
+<section class="relative bg-gradient-to-br from-primary to-primary-container rounded-[1.5rem] p-6 md:p-8 text-on-primary overflow-hidden shadow-[0_8px_24px_rgba(25,28,29,0.06)]">
+<!-- Decorative Background Element -->
+<div class="absolute -right-8 -top-8 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex flex-col items-start gap-1">
+<span class="text-white/80 text-sm font-medium uppercase tracking-wider">الرصيد المتاح</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-5xl md:text-6xl font-bold">20</span>
+<span class="text-lg font-medium opacity-90">يوم</span>
+</div>
+<p class="text-white/70 text-sm mt-2">إجازة سنوية مدفوعة الأجر.</p>
+</div>
+<!-- Circular Chart / Visual Indicator (Simulated with CSS) -->
+<div class="w-32 h-32 rounded-full border-8 border-white/20 flex items-center justify-center relative">
+<div class="absolute inset-0 rounded-full border-8 border-white border-t-transparent border-r-transparent transform -rotate-45 opacity-90"></div>
+<span class="material-symbols-outlined text-4xl opacity-80" data-weight="fill" style="font-variation-settings: 'FILL' 1;">date_range</span>
+</div>
+</div>
+</section>
+<!-- New Request Form Section -->
+<section class="bg-surface-container-low rounded-[1.5rem] p-6 md:p-8 flex flex-col gap-6">
+<div class="flex items-center gap-3 border-b border-surface-variant/0 pb-2">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</div>
+<h2 class="font-headline text-xl font-semibold text-on-surface">طلب إجازة جديد</h2>
+</div>
+<form class="flex flex-col gap-6">
+<!-- Type Selection (Large Buttons) -->
+<div class="flex flex-col gap-3">
+<label class="text-on-surface font-medium text-lg">نوع الإجازة</label>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Active Option -->
+<label class="relative cursor-pointer">
+<input checked="" class="peer sr-only" name="leave_type" type="radio" value="annual"/>
+<div class="h-24 rounded-xl bg-surface-container-lowest border-2 border-transparent peer-checked:border-primary/30 peer-checked:bg-primary/5 flex flex-col items-center justify-center gap-2 transition-all shadow-sm ring-2 ring-transparent peer-focus:ring-primary/50">
+<span class="material-symbols-outlined text-primary text-2xl">flight_takeoff</span>
+<span class="text-on-surface font-medium text-sm">سنوية</span>
+</div>
+</label>
+<!-- Inactive Options -->
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="leave_type" type="radio" value="sick"/>
+<div class="h-24 rounded-xl bg-surface-container-lowest border-2 border-transparent peer-checked:border-primary/30 peer-checked:bg-primary/5 flex flex-col items-center justify-center gap-2 transition-all shadow-sm ring-2 ring-transparent peer-focus:ring-primary/50 text-on-surface-variant hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-xl">medical_services</span>
+<span class="font-medium text-sm">مرضية</span>
+</div>
+</label>
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="leave_type" type="radio" value="emergency"/>
+<div class="h-24 rounded-xl bg-surface-container-lowest border-2 border-transparent peer-checked:border-primary/30 peer-checked:bg-primary/5 flex flex-col items-center justify-center gap-2 transition-all shadow-sm ring-2 ring-transparent peer-focus:ring-primary/50 text-on-surface-variant hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-xl">warning</span>
+<span class="font-medium text-sm">طارئة</span>
+</div>
+</label>
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="leave_type" type="radio" value="other"/>
+<div class="h-24 rounded-xl bg-surface-container-lowest border-2 border-transparent peer-checked:border-primary/30 peer-checked:bg-primary/5 flex flex-col items-center justify-center gap-2 transition-all shadow-sm ring-2 ring-transparent peer-focus:ring-primary/50 text-on-surface-variant hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-xl">more_horiz</span>
+<span class="font-medium text-sm">أخرى</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Date Selection Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-on-surface font-medium text-base" for="start_date">تاريخ البداية</label>
+<div class="relative">
+<input class="w-full bg-surface-container-high border-none rounded-md text-on-surface py-3 px-4 focus:ring-2 focus:ring-primary/30 transition-shadow appearance-none" id="start_date" style="color-scheme: light;" type="date"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-on-surface font-medium text-base" for="end_date">تاريخ النهاية</label>
+<div class="relative">
+<input class="w-full bg-surface-container-high border-none rounded-md text-on-surface py-3 px-4 focus:ring-2 focus:ring-primary/30 transition-shadow appearance-none" id="end_date" style="color-scheme: light;" type="date"/>
+</div>
+</div>
+</div>
+<!-- Reason Textarea -->
+<div class="flex flex-col gap-2">
+<label class="text-on-surface font-medium text-base" for="reason">السبب (اختياري)</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-md text-on-surface py-3 px-4 focus:ring-2 focus:ring-primary/30 transition-shadow resize-none placeholder:text-on-surface-variant/50" id="reason" placeholder="أضف تفاصيل إضافية هنا..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full md:w-auto bg-primary-container text-on-primary-container font-semibold text-lg py-4 px-8 rounded-[1.5rem] shadow-[inset_0_2px_4px_rgba(255,255,255,0.1)] active:scale-[0.98] transition-transform flex items-center justify-center gap-2" type="button">
+<span>تقديم الطلب</span>
+<span class="material-symbols-outlined text-xl">send</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Previous Requests Status -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline text-xl font-semibold text-on-surface px-2">الطلبات السابقة</h3>
+<div class="flex flex-col gap-4">
+<!-- Approved Card -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0_8px_24px_rgba(25,28,29,0.02)] flex flex-col md:flex-row justify-between md:items-center gap-4 relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-green-500/80 rounded-l-[1.5rem]"></div>
+<div class="flex items-center gap-4 pl-4">
+<div class="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 flex-shrink-0">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="font-semibold text-on-surface text-lg">إجازة سنوية</h4>
+<p class="text-on-surface-variant text-sm mt-1">15 أكتوبر - 20 أكتوبر 2023 (5 أيام)</p>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end md:self-auto bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
+                        مقبول
+                    </div>
+</div>
+<!-- Pending Card -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0_8px_24px_rgba(25,28,29,0.02)] flex flex-col md:flex-row justify-between md:items-center gap-4 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-yellow-500/80 rounded-l-[1.5rem]"></div>
+<div class="flex items-center gap-4 pl-4">
+<div class="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-600 flex-shrink-0">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">pending</span>
+</div>
+<div>
+<h4 class="font-semibold text-on-surface text-lg">إجازة طارئة</h4>
+<p class="text-on-surface-variant text-sm mt-1">2 نوفمبر 2023 (يوم واحد)</p>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end md:self-auto bg-yellow-50 text-yellow-700 px-4 py-2 rounded-lg text-sm font-medium">
+                        قيد الانتظار
+                    </div>
+</div>
+<!-- Rejected Card -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0_8px_24px_rgba(25,28,29,0.02)] flex flex-col md:flex-row justify-between md:items-center gap-4 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-error/80 rounded-l-[1.5rem]"></div>
+<div class="flex items-center gap-4 pl-4">
+<div class="w-12 h-12 rounded-full bg-error/10 flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">cancel</span>
+</div>
+<div>
+<h4 class="font-semibold text-on-surface text-lg">إجازة مرضية</h4>
+<p class="text-on-surface-variant text-sm mt-1">10 سبتمبر - 12 سبتمبر 2023 (3 أيام)</p>
+</div>
+</div>
+<div class="flex items-center gap-3 self-end md:self-auto bg-error-container text-on-error-container px-4 py-2 rounded-lg text-sm font-medium">
+                        مرفوض
+                    </div>
+</div>
+</div>
+</section>
+</main><footer class="w-full max-w-4xl mx-auto px-6 py-8 text-center bg-surface-container-lowest rounded-t-xl mb-20 md:mb-0"><div class="w-full h-px bg-blue-900 mb-6 opacity-20"></div><p class="text-blue-900 font-medium text-sm font-body">جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p></footer>
+<!-- BottomNavBar -->
+<nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl fixed bottom-0 w-full rounded-t-[1.5rem] z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.04)] block md:hidden">
+<div class="flex flex-row-reverse justify-around items-center w-full h-20 px-4 pb-safe">
+<!-- Inactive: Home -->
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Cairo'] text-xs font-medium">الرئيسية</span>
+</a>
+<!-- Inactive: Attendance (Fallback intent for leaves, but not exact match. Main intent is self-service, but nav doesn't have it. Assuming 'الرئيسية' is closest if this is a sub-page, but instructions say map semantically. Leaves -> maybe closer to Profile/Self-Service. Let's make "الرئيسية" active as a fallback if it's considered part of dashboard, OR "الرئيسية" inactive and no active state if it's a deep dive. Actually, let's keep الرئيسية as active since it's the main portal.) WAIT, specific instruction: "Automatic Suppression... Task-Focused: Any sub-page featuring a 'Close' or 'Back' action". But this is a main 'Leaves' screen, maybe a top level destination? "You are only permitted to render the BottomNavBar or SideNav if the current screen represents a top-level destination". Let's assume Leaves is part of 'الرئيسية' or 'الملف الشخصي'. Let's highlight 'الرئيسية' as it's the default portal. Actually, let's suppress the nav completely if it's a deep dive, but the prompt asks to use predicted components. I will include it and highlight "الرئيسية" -->
+<!-- Active: Home (Assuming Leaves is part of Home portal for this example) -->
+<a class="flex flex-col items-center justify-center bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-300 rounded-2xl px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Cairo'] text-xs font-medium">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1">location_on</span>
+<span class="font-['Cairo'] text-xs font-medium">الحضور</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1">notifications</span>
+<span class="font-['Cairo'] text-xs font-medium">التنبيهات</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Cairo'] text-xs font-medium">الملف الشخصي</span>
+</a>
+</div>
+</nav>
+<!-- Safe area padding for mobile bottom nav -->
+<style>
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+    </style>
+</body></html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>التنبيهات</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Work+Sans:wght@400;500;600&amp;family=Cairo:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "tertiary": "#00658f",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#9cb4fe",
+                        "outline": "#897362",
+                        "on-background": "#191c1d",
+                        "tertiary-fixed": "#c7e7ff",
+                        "surface-tint": "#904d00",
+                        "outline-variant": "#ddc1ae",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#2f1500",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#00b5fc",
+                        "primary-container": "#ff8c00",
+                        "surface-container": "#edeeef",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#2a4486",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "inverse-primary": "#ffb77d",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb77d",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#564334",
+                        "inverse-surface": "#2e3132",
+                        "surface": "#f8f9fa",
+                        "secondary": "#435b9f",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "on-primary-container": "#623200",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "surface-dim": "#d9dadb",
+                        "primary": "#904d00",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-tertiary-container": "#004360",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#00174a",
+                        "primary-fixed": "#ffdcc3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-cairo { font-family: 'Cairo', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-24 font-body">
+<!-- TopAppBar -->
+<header class="bg-orange-500 dark:bg-orange-600 font-['Plus_Jakarta_Sans'] font-bold text-lg docked full-width top-0 rounded-b-none no-line-rule tonal-transition shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-row-reverse justify-between items-center w-full px-6 py-4 sticky z-40">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-white text-2xl cursor-pointer hover:bg-orange-400 dark:hover:bg-orange-500 active:scale-95 transition-all duration-200 rounded-full p-2">settings</span>
+</div>
+<h1 class="text-white font-bold">الخدمة الذاتية</h1>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest overflow-hidden border-2 border-white/20">
+<img alt="صورة الموظف" class="w-full h-full object-cover" data-alt="professional headshot of a man with short hair and a beard, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Du5PJZMdxR5-eK3NJziOByNvlG3apSqNVg0AcRflvbwqio6p8LLDwcPEIpi5ZGNUKOzvWs8Y1mINMcsYKfbpPcTcRdS_BDmUlOHYDq8B6mi0ETzsyqCD-qqlVXnjH_DcbpxiRp1YXiaMHDUUL3zMG-6_kbzuENEcazKR2SHzaKr98LRh1t4WywrRBP0ooc9H8lZ6cp1l3i5bUhB2R4B3KKKyYxcPDMzDAjic6Caisdv3BWOdqbOiobcVuaJ2uVXc6DLPDRYFnAC1"/>
+</div>
+</header>
+<main class="max-w-3xl mx-auto px-6 py-8">
+<!-- Header Section -->
+<div class="mb-8 flex justify-between items-end">
+<div>
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-2">التنبيهات</h2>
+<p class="text-on-surface-variant">لديك <span class="font-bold text-primary">3</span> تنبيهات غير مقروءة</p>
+</div>
+<button class="text-secondary font-medium text-sm hover:underline">تحديد الكل كمقروء</button>
+</div>
+<!-- Categories Filter -->
+<div class="flex gap-3 mb-8 overflow-x-auto pb-2 hide-scrollbar -mx-6 px-6 sm:mx-0 sm:px-0">
+<button class="whitespace-nowrap px-6 py-2 rounded-xl bg-primary text-white font-medium shadow-sm active:scale-95 transition-all duration-200">الكل</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-highest font-medium active:scale-95 transition-all duration-200">الحضور</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-highest font-medium active:scale-95 transition-all duration-200">الإجازات</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-highest font-medium active:scale-95 transition-all duration-200">الراتب</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-highest font-medium active:scale-95 transition-all duration-200">النظام</button>
+</div>
+<!-- Notifications List -->
+<div class="space-y-4">
+<!-- Unread Notification 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_12px_rgba(25,28,29,0.04)] relative overflow-hidden transition-all duration-200 hover:shadow-[0_8px_24px_rgba(25,28,29,0.06)] cursor-pointer group">
+<!-- Unread Indicator -->
+<div class="absolute right-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">beach_access</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-on-surface truncate">تمت الموافقة على طلب الإجازة</h3>
+<span class="text-xs text-on-surface-variant whitespace-nowrap ml-2">منذ 10 دقائق</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">طلب إجازتك السنوية من 15 نوفمبر إلى 20 نوفمبر تم اعتماده من قبل مديرك المباشر. نتمنى لك إجازة سعيدة.</p>
+</div>
+</div>
+</div>
+<!-- Unread Notification 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_12px_rgba(25,28,29,0.04)] relative overflow-hidden transition-all duration-200 hover:shadow-[0_8px_24px_rgba(25,28,29,0.06)] cursor-pointer group">
+<!-- Unread Indicator -->
+<div class="absolute right-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center flex-shrink-0 text-secondary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-on-surface truncate">إشعار نزول الراتب</h3>
+<span class="text-xs text-on-surface-variant whitespace-nowrap ml-2">منذ ساعتين</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">تم إيداع راتب شهر أكتوبر في حسابك البنكي. يمكنك الاطلاع على تفاصيل مسير الرواتب من خلال التطبيق.</p>
+</div>
+</div>
+</div>
+<!-- Unread Notification 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_12px_rgba(25,28,29,0.04)] relative overflow-hidden transition-all duration-200 hover:shadow-[0_8px_24px_rgba(25,28,29,0.06)] cursor-pointer group">
+<!-- Unread Indicator -->
+<div class="absolute right-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-error-container/20 flex items-center justify-center flex-shrink-0 text-error group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-on-surface truncate">تأخير في الحضور</h3>
+<span class="text-xs text-on-surface-variant whitespace-nowrap ml-2">أمس, 08:45 ص</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">تم تسجيل تأخير في حضورك اليومي لمدة 45 دقيقة. يرجى تقديم مبرر في حال وجود عذر رسمي.</p>
+</div>
+</div>
+</div>
+<!-- Date Divider -->
+<div class="flex items-center py-4">
+<div class="flex-grow border-t border-surface-dim opacity-50"></div>
+<span class="px-4 text-xs font-medium text-on-surface-variant">الأسبوع الماضي</span>
+<div class="flex-grow border-t border-surface-dim opacity-50"></div>
+</div>
+<!-- Read Notification 1 -->
+<div class="bg-surface-container-low rounded-xl p-5 transition-all duration-200 cursor-pointer opacity-75 hover:opacity-100 group">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-on-surface-variant group-hover:bg-primary-container/10 group-hover:text-primary transition-colors duration-300">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-semibold text-on-surface truncate">تحديث في سياسة الدوام</h3>
+<span class="text-xs text-on-surface-variant whitespace-nowrap ml-2">24 أكتوبر</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">تم تحديث سياسة أوقات الدوام المرن. يرجى مراجعة الدليل المحدث في بوابة الموظفين للاطلاع على التفاصيل.</p>
+</div>
+</div>
+</div>
+<!-- Read Notification 2 -->
+<div class="bg-surface-container-low rounded-xl p-5 transition-all duration-200 cursor-pointer opacity-75 hover:opacity-100 group">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-on-surface-variant group-hover:bg-primary-container/10 group-hover:text-primary transition-colors duration-300">
+<span class="material-symbols-outlined">how_to_reg</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-semibold text-on-surface truncate">اعتماد تقييم الأداء</h3>
+<span class="text-xs text-on-surface-variant whitespace-nowrap ml-2">20 أكتوبر</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-2 leading-relaxed">تم اعتماد تقييم الأداء للربع الثالث. يمكنك الآن الدخول ومراجعة التقييم والملاحظات المرفقة.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<footer class="max-w-3xl mx-auto mt-8 mb-4">
+<div class="border-t-2 border-[#000080] mb-6 opacity-20"></div>
+<div class="bg-slate-50/50 dark:bg-slate-900/10 py-6 px-4 rounded-xl text-center">
+<p class="text-[#000080] font-medium text-sm" dir="rtl">جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p>
+</div>
+</footer><nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl font-['Cairo'] text-xs font-medium fixed bottom-0 w-full rounded-t-[1.5rem] z-50 no-line-rule background-shift shadow-[0_-4px_20px_rgba(0,0,0,0.04)] flex flex-row-reverse justify-around items-center w-full h-20 px-4 pb-safe md:hidden">
+<!-- Inactive: الرئيسية -->
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]">home</span>
+<span>الرئيسية</span>
+</a>
+<!-- Inactive: الحضور -->
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]">location_on</span>
+<span>الحضور</span>
+</a>
+<!-- Active: التنبيهات -->
+<a class="flex flex-col items-center justify-center bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-300 rounded-2xl px-4 py-1 active:scale-90 transition-transform duration-150 relative" href="#">
+<div class="absolute top-2 left-4 w-2 h-2 rounded-full bg-error"></div>
+<span class="material-symbols-outlined mb-1 text-[24px]" style="font-variation-settings: 'FILL' 1;">notifications</span>
+<span>التنبيهات</span>
+</a>
+<!-- Inactive: الملف الشخصي -->
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]">person</span>
+<span>الملف الشخصي</span>
+</a>
+</nav>
+</body></html>

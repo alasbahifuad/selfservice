@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>التقارير الشهرية</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;family=Cairo:wght@400;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "primary": "#904d00",
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "error": "#ba1a1a",
+                        "background": "#f8f9fa",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "on-primary-fixed": "#2f1500",
+                        "secondary": "#435b9f",
+                        "primary-fixed": "#ffdcc3",
+                        "on-secondary-container": "#2a4486",
+                        "inverse-primary": "#ffb77d",
+                        "secondary-fixed": "#dbe1ff",
+                        "outline-variant": "#ddc1ae",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#00b5fc",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container-low": "#f3f4f5",
+                        "on-background": "#191c1d",
+                        "on-tertiary-fixed": "#001e2e",
+                        "tertiary-fixed": "#c7e7ff",
+                        "inverse-surface": "#2e3132",
+                        "on-secondary-fixed": "#00174a",
+                        "secondary-container": "#9cb4fe",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#564334",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "outline": "#897362",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#edeeef",
+                        "on-tertiary-container": "#004360",
+                        "surface-container-high": "#e7e8e9",
+                        "surface": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-container": "#623200",
+                        "tertiary": "#00658f",
+                        "surface-bright": "#f8f9fa",
+                        "primary-container": "#ff8c00",
+                        "surface-tint": "#904d00",
+                        "primary-fixed-dim": "#ffb77d"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["IBM Plex Sans Arabic", "Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Cairo", "Work Sans", "sans-serif"],
+                        "label": ["Cairo", "Work Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Cairo', 'Work Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .display-font { font-family: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen md:pb-0 md:pl-80 pb-32">
+<!-- Navigation Drawer (Desktop/Tablet) -->
+<nav class="hidden md:flex fixed left-0 top-0 h-full w-80 z-[60] flex-col text-right bg-surface-container-low shadow-2xl rounded-r-[1.5rem] overflow-hidden">
+<div class="p-6 bg-surface-container-lowest flex items-center gap-4 right_align">
+<img alt="Employee Portrait" class="w-16 h-16 rounded-full object-cover outline-variant outline outline-2 outline-offset-2" data-alt="Professional portrait of an employee in a corporate setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9c6SHE7DM137xqrh7hH8-0qrbglrkqRpJNDV9k5kHqeFZYHamG9rMYH4kJpNufnlSCm_ycL7YN2ZpSpe9braOJ28igMrBxI02yti_gWyWUNPK8obVR3c58YUfTXbsoFqcCFOBUWNkhM-0KP_CWPbfXV5_EtLI0rl42i8wZnj0y4CRNDS2lyFm9YYHa5hFOh4_w8TY2uc404QAsXAJ0YFmWUU_sfM2fDJVj5hRiTpETGluITckyvnjegQwMPeJ3cdcI1VFE_zE-0o7"/>
+<div>
+<h2 class="font-headline text-lg font-bold text-primary">أحمد محمد</h2>
+<p class="text-sm text-on-surface-variant">مصمم واجهة المستخدم</p>
+<p class="text-xs text-outline mt-1 font-mono">الرقم الوظيفي: #١٢٣٤</p>
+</div>
+</div>
+<div class="flex-1 py-6 space-y-2">
+<a class="flex items-center gap-4 py-3 text-gray-600 px-8 hover:bg-white/50 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label text-lg font-medium">لوحة التحكم</span>
+</a>
+<a class="flex items-center gap-4 py-3 bg-white text-primary font-bold rounded-l-full ml-4 px-8 shadow-sm transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-label text-lg">التقارير</span>
+</a>
+<a class="flex items-center gap-4 py-3 text-gray-600 px-8 hover:bg-white/50 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-label text-lg font-medium">الطلبات</span>
+</a>
+<a class="flex items-center gap-4 py-3 text-gray-600 px-8 hover:bg-white/50 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label text-lg font-medium">الحساب</span>
+</a>
+</div>
+<div class="p-6">
+<button class="flex items-center gap-4 py-3 text-gray-600 px-8 w-full hover:bg-white/50 transition-all duration-300 ease-in-out">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label text-lg font-medium">تسجيل الخروج</span>
+</button>
+</div>
+</nav>
+<!-- Top App Bar -->
+<header class="sticky top-0 z-40 bg-surface w-full shadow-none flex flex-row-reverse justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-primary p-2 hover:bg-surface-container-low rounded-full transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline font-bold text-2xl tracking-tight text-primary">التقارير الشهرية</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-2 px-3 py-2 bg-secondary/10 text-secondary hover:bg-secondary/20 rounded-lg transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl">table_view</span>
+<span class="font-label text-sm font-bold hidden sm:inline">Excel</span>
+</button>
+<button class="flex items-center gap-2 px-3 py-2 bg-primary/10 text-primary hover:bg-primary/20 rounded-lg transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl">picture_as_pdf</span>
+<span class="font-label text-sm font-bold hidden sm:inline">PDF</span>
+</button>
+</div></header>
+<div class="bg-gradient-to-b from-surface-container-low to-transparent h-4 w-full"></div>
+<!-- Main Content Canvas -->
+<main class="px-6 md:px-12 py-8 max-w-5xl mx-auto space-y-8">
+<!-- Filters Section -->
+<section aria-label="Filters" class="bg-surface-container-low p-6 rounded-[1.5rem] shadow-sm">
+<h2 class="sr-only">تصفية التقرير</h2>
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex-1">
+<label class="block font-label text-sm font-semibold text-on-surface-variant mb-2" for="month-select">الشهر</label>
+<div class="relative">
+<select class="w-full bg-surface-container-highest border-none text-on-surface rounded-xl py-3 px-4 appearance-none focus:ring-2 focus:ring-primary/30 focus:outline-none font-body" id="month-select">
+<option>أكتوبر</option>
+<option>سبتمبر</option>
+<option>أغسطس</option>
+</select>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex-1">
+<label class="block font-label text-sm font-semibold text-on-surface-variant mb-2" for="year-select">السنة</label>
+<div class="relative">
+<select class="w-full bg-surface-container-highest border-none text-on-surface rounded-xl py-3 px-4 appearance-none focus:ring-2 focus:ring-primary/30 focus:outline-none font-body" id="year-select">
+<option>2023</option>
+<option>2022</option>
+</select>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Summary Cards Grid -->
+<section aria-label="Summary Statistics" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Total Attendance -->
+<div class="bg-surface-container-lowest p-6 rounded-[1.5rem] relative overflow-hidden flex flex-col justify-between min-h-[140px]" style="box-shadow: 0 8px 24px rgba(25,28,29,0.06);">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-lg font-semibold text-on-surface">إجمالي الحضور</h3>
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">how_to_reg</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-4xl font-bold text-primary">21</span>
+<span class="font-body text-sm text-on-surface-variant">يوم</span>
+</div>
+</div>
+<!-- Card 2: Delay Hours -->
+<div class="bg-surface-container-lowest p-6 rounded-[1.5rem] relative overflow-hidden flex flex-col justify-between min-h-[140px]" style="box-shadow: 0 8px 24px rgba(25,28,29,0.06);">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-lg font-semibold text-on-surface">ساعات التأخير</h3>
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-4xl font-bold text-primary">3.5</span>
+<span class="font-body text-sm text-on-surface-variant">ساعة</span>
+</div>
+</div>
+<!-- Card 3: Absence Days -->
+<div class="bg-surface-container-lowest p-6 rounded-[1.5rem] relative overflow-hidden flex flex-col justify-between min-h-[140px]" style="box-shadow: 0 8px 24px rgba(25,28,29,0.06);">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-lg font-semibold text-on-surface">أيام الغياب</h3>
+<div class="w-12 h-12 rounded-full bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_busy</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-4xl font-bold text-primary">1</span>
+<span class="font-body text-sm text-on-surface-variant">يوم</span>
+</div>
+</div>
+<!-- Card 4: Total Deductions -->
+<div class="bg-surface-container-lowest p-6 rounded-[1.5rem] relative overflow-hidden flex flex-col justify-between min-h-[140px]" style="box-shadow: 0 8px 24px rgba(25,28,29,0.06);">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-lg font-semibold text-on-surface">إجمالي الخصومات</h3>
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-4xl font-bold text-primary">150</span>
+<span class="font-body text-sm text-on-surface-variant">ر.س</span>
+</div>
+</div>
+</section>
+<!-- Detailed List -->
+<section aria-label="Detailed Records" class="space-y-4">
+<h2 class="font-headline text-xl font-bold text-on-surface mb-6">سجل الدوام التفصيلي</h2>
+<!-- Record Item 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-[1.5rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4" style="box-shadow: 0 4px 12px rgba(25,28,29,0.03);">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="font-headline font-bold">15</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-on-surface">الأحد, 15 أكتوبر 2023</h4>
+<p class="text-sm text-on-surface-variant font-body">تسجيل الدخول: 08:00 ص - الانصراف: 04:00 م</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span class="font-label text-sm font-semibold">حاضر</span>
+</div>
+</div>
+<!-- Record Item 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-[1.5rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4" style="box-shadow: 0 4px 12px rgba(25,28,29,0.03);">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="font-headline font-bold">16</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-on-surface">الإثنين, 16 أكتوبر 2023</h4>
+<p class="text-sm text-on-surface-variant font-body">تسجيل الدخول: 08:45 ص - الانصراف: 04:00 م</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-orange-50 text-primary px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="font-label text-sm font-semibold">متأخر (45 دقيقة)</span>
+</div>
+</div>
+<!-- Record Item 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-[1.5rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4" style="box-shadow: 0 4px 12px rgba(25,28,29,0.03);">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="font-headline font-bold">17</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-on-surface">الثلاثاء, 17 أكتوبر 2023</h4>
+<p class="text-sm text-on-surface-variant font-body">لم يتم تسجيل حضور</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-red-50 text-error px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-sm">cancel</span>
+<span class="font-label text-sm font-semibold">غائب</span>
+</div>
+</div>
+</section>
+<footer class="pt-10 pb-12 text-center border-t-4 border-blue-900 bg-blue-50/30 rounded-xl mt-12">
+<p class="font-body text-sm text-blue-900 font-bold">
+    جميع الحقوق محفوظة @2026 - فؤاد الأصبحي
+  </p>
+</footer></main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex flex-row-reverse justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg rounded-t-[1.5rem] shadow-[0_-8px_24px_rgba(25,28,29,0.06)] tonal-transition-surface-container-low">
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 hover:text-[#ff8c00] transition-all active:translate-y-1 duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold mt-1">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#ff8c00]/10 text-[#ff8c00] rounded-[1.5rem] px-5 py-2 hover:text-[#ff8c00] transition-all active:translate-y-1 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold mt-1">التقارير</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 hover:text-[#ff8c00] transition-all active:translate-y-1 duration-200" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold mt-1">الطلبات</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 hover:text-[#ff8c00] transition-all active:translate-y-1 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold mt-1">الحساب</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تسجيل الحضور والانصراف</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Work+Sans:wght@400;500;600&amp;family=Cairo:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-tertiary-fixed-variant": "#004c6c",
+                "on-primary-fixed-variant": "#6e3900",
+                "tertiary": "#00658f",
+                "error": "#ba1a1a",
+                "secondary-container": "#9cb4fe",
+                "outline": "#897362",
+                "on-background": "#191c1d",
+                "tertiary-fixed": "#c7e7ff",
+                "surface-tint": "#904d00",
+                "outline-variant": "#ddc1ae",
+                "on-secondary-fixed-variant": "#2a4386",
+                "on-surface": "#191c1d",
+                "on-primary-fixed": "#2f1500",
+                "secondary-fixed": "#dbe1ff",
+                "on-error": "#ffffff",
+                "error-container": "#ffdad6",
+                "tertiary-container": "#00b5fc",
+                "primary-container": "#ff8c00",
+                "surface-container": "#edeeef",
+                "surface-container-high": "#e7e8e9",
+                "inverse-on-surface": "#f0f1f2",
+                "on-tertiary": "#ffffff",
+                "on-secondary-container": "#2a4486",
+                "on-error-container": "#93000a",
+                "background": "#f8f9fa",
+                "inverse-primary": "#ffb77d",
+                "surface-bright": "#f8f9fa",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#ffb77d",
+                "on-primary": "#ffffff",
+                "on-surface-variant": "#564334",
+                "inverse-surface": "#2e3132",
+                "surface": "#f8f9fa",
+                "secondary": "#435b9f",
+                "secondary-fixed-dim": "#b3c5ff",
+                "on-primary-container": "#623200",
+                "surface-container-low": "#f3f4f5",
+                "tertiary-fixed-dim": "#85cfff",
+                "surface-dim": "#d9dadb",
+                "primary": "#904d00",
+                "surface-variant": "#e1e3e4",
+                "on-tertiary-fixed": "#001e2e",
+                "on-tertiary-container": "#004360",
+                "surface-container-highest": "#e1e3e4",
+                "on-secondary": "#ffffff",
+                "on-secondary-fixed": "#00174a",
+                "primary-fixed": "#ffdcc3"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {},
+        "fontFamily": {
+                "headline": [
+                        "Plus Jakarta Sans", "sans-serif"
+                ],
+                "body": [
+                        "Work Sans", "sans-serif"
+                ],
+                "label": [
+                        "Work Sans", "sans-serif"
+                ],
+                "arabic": [
+                        "Cairo", "sans-serif"
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Cairo', sans-serif; }
+  .material-symbols-outlined { font-family: 'Material Symbols Outlined'; }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col pb-24 md:pb-0 font-arabic">
+<!-- TopAppBar -->
+<header class="bg-orange-500 dark:bg-orange-600 docked full-width top-0 rounded-b-none no-line-rule tonal-transition shadow-[0_8px_24px_rgba(25,28,29,0.06)] z-50">
+<div class="flex flex-row-reverse justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-orange-200">
+<img alt="صورة الموظف" class="w-full h-full object-cover" data-alt="professional headshot of a modern employee smiling slightly, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIsa9xnaOUWh9Hzc84mL9oVweTMfIyGIEMLFgBNcaC9OrinPOp1nWRMgOqxYuVfJFRs7vc68D6Oa6M-QFV4UPqakx5zIskml-l7ZM6NllrC032MyX-rFIsWX9m8aoDpDqlIIoc2o3IFktfnkE4j8F6UCuF1Mdqa3DxHVdheIIhoTzAKsVCL9llbSHXYZo4NQnr6aeZueiv3kscY-jYpQ3dG1kBP2l7937mljerv3bvqlxPomI6W7uv_8Er-F9mA7ecVHKg_s5YuNBT"/>
+</div>
+<span class="text-xl font-black text-white font-headline">الخدمة الذاتية</span>
+</div>
+<button class="text-white dark:text-white hover:bg-orange-400 dark:hover:bg-orange-500 active:scale-95 transition-all duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center justify-start px-6 pt-8 gap-8 max-w-4xl mx-auto w-full">
+<!-- Time & Date Card -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-8 flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Decorative gradient background -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-fixed to-surface-container-lowest opacity-30 z-0"></div>
+<div class="z-10 text-center">
+<h1 class="text-5xl font-bold text-primary mb-2 tracking-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">08:45 AM</h1>
+<p class="text-lg text-on-surface-variant font-medium">الخميس، 24 أكتوبر 2023</p>
+</div>
+</section>
+<!-- Geo-Location Status -->
+<section class="w-full flex justify-center">
+<div class="inline-flex items-center gap-3 bg-surface-container-lowest px-6 py-3 rounded-full shadow-[0_4px_12px_rgba(25,28,29,0.04)]">
+<div class="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+<span class="text-on-surface font-semibold">أنت في النطاق المسموح</span>
+<span class="material-symbols-outlined text-green-500" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</section>
+<!-- Action Buttons Grid -->
+<section class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+<!-- Check-in Button -->
+<button class="group flex flex-col items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-[2rem] p-8 h-48 relative overflow-hidden shadow-[0_8px_24px_rgba(144,77,0,0.2)] transition-transform active:scale-95">
+<div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
+<div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-4 backdrop-blur-sm">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">login</span>
+</div>
+<span class="text-2xl font-bold">تسجيل حضور</span>
+</button>
+<!-- Check-out Button -->
+<button class="group flex flex-col items-center justify-center bg-surface-container-lowest text-on-surface border border-outline-variant/15 rounded-[2rem] p-8 h-48 relative overflow-hidden transition-transform active:scale-95 hover:bg-surface-container-low">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">logout</span>
+</div>
+<span class="text-2xl font-bold">تسجيل انصراف</span>
+</button>
+</section>
+<!-- Today's Summary -->
+<section class="w-full mt-8">
+<h2 class="text-xl font-bold text-on-surface mb-6">ملخص اليوم</h2>
+<div class="bg-surface-container-low rounded-xl p-6 relative">
+<!-- Vertical Stepper Line -->
+<div class="absolute right-9 top-10 bottom-10 w-1 bg-surface-variant rounded-full"></div>
+<div class="flex flex-col gap-8 relative z-10">
+<!-- Check-in Event -->
+<div class="flex items-center gap-6">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center ring-4 ring-surface-container-low">
+<span class="material-symbols-outlined text-on-primary text-sm">check</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-4 flex-grow shadow-sm">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold text-on-surface">تسجيل حضور</span>
+<span class="text-primary font-semibold">08:45 AM</span>
+</div>
+<p class="text-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                 المقر الرئيسي الرياض
+              </p>
+</div>
+</div>
+<!-- Pending Check-out Event -->
+<div class="flex items-center gap-6 opacity-60">
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center ring-4 ring-surface-container-low">
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-4 flex-grow border border-dashed border-outline-variant">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold text-on-surface-variant">تسجيل انصراف</span>
+<span class="text-on-surface-variant">--:--</span>
+</div>
+<p class="text-sm text-on-surface-variant">لم يتم تسجيل الانصراف بعد</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="md:hidden w-full py-6 text-center text-sm mt-8 text-blue-900 bg-blue-50/50 border-t-2 border-blue-900">
+<p>جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p>
+</footer></main>
+<!-- BottomNavBar (Mobile Only) -->
+<footer class="hidden md:block w-full py-8 text-center text-sm mt-auto text-blue-900 bg-blue-50/50 border-t-2 border-blue-900">
+<p>جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p>
+</footer><nav class="md:hidden bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl fixed bottom-0 w-full rounded-t-[1.5rem] z-50 no-line-rule background-shift shadow-[0_-4px_20px_rgba(0,0,0,0.04)]">
+<div class="flex flex-row-reverse justify-around items-center w-full h-20 px-4 pb-safe">
+<!-- Home -->
+<button class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined text-2xl mb-1">home</span>
+<span class="font-['Cairo'] text-xs font-medium">الرئيسية</span>
+</button>
+<!-- Location/Attendance (ACTIVE) -->
+<button class="flex flex-col items-center justify-center bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-300 rounded-2xl px-4 py-1 active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-['Cairo'] text-xs font-bold">الحضور</span>
+</button>
+<!-- Notifications -->
+<button class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined text-2xl mb-1">notifications</span>
+<span class="font-['Cairo'] text-xs font-medium">التنبيهات</span>
+</button>
+<!-- Profile -->
+<button class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined text-2xl mb-1">person</span>
+<span class="font-['Cairo'] text-xs font-medium">الملف الشخصي</span>
+</button>
+</div>
+</nav>
+</body></html>

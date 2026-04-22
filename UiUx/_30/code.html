@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تقرير التقييم الإجمالي</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-bright": "#f8f9fa",
+                      "surface-dim": "#d9dadb",
+                      "secondary-container": "#9cb4fe",
+                      "surface": "#f8f9fa",
+                      "on-surface": "#191c1d",
+                      "on-primary-fixed-variant": "#6e3900",
+                      "on-background": "#191c1d",
+                      "on-secondary-fixed": "#00174a",
+                      "primary-fixed": "#ffdcc3",
+                      "on-tertiary-container": "#004360",
+                      "on-primary-fixed": "#2f1500",
+                      "tertiary-fixed": "#c7e7ff",
+                      "inverse-surface": "#2e3132",
+                      "surface-variant": "#e1e3e4",
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#004c6c",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#623200",
+                      "tertiary": "#00658f",
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#2a4486",
+                      "primary-container": "#ff8c00",
+                      "tertiary-container": "#00b5fc",
+                      "secondary": "#435b9f",
+                      "primary": "#904d00",
+                      "inverse-on-surface": "#f0f1f2",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed": "#dbe1ff",
+                      "surface-tint": "#904d00",
+                      "on-surface-variant": "#564334",
+                      "on-secondary-fixed-variant": "#2a4386",
+                      "on-tertiary-fixed": "#001e2e",
+                      "tertiary-fixed-dim": "#85cfff",
+                      "on-error-container": "#93000a",
+                      "primary-fixed-dim": "#ffb77d",
+                      "outline": "#897362",
+                      "surface-container": "#edeeef",
+                      "inverse-primary": "#ffb77d",
+                      "secondary-fixed-dim": "#b3c5ff",
+                      "on-secondary": "#ffffff",
+                      "background": "#f8f9fa",
+                      "surface-container-highest": "#e1e3e4",
+                      "surface-container-low": "#f3f4f5",
+                      "surface-container-high": "#e7e8e9",
+                      "outline-variant": "#ddc1ae",
+                      "on-error": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Plus Jakarta Sans", "IBM Plex Sans Arabic", "sans-serif"
+                      ],
+                      "body": [
+                              "Work Sans", "Cairo", "sans-serif"
+                      ],
+                      "label": [
+                              "Work Sans", "Cairo", "sans-serif"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            font-family: 'Cairo', 'Work Sans', sans-serif;
+            background-color: #f8f9fa; /* surface */
+            color: #191c1d; /* on-surface */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-hero {
+            background: linear-gradient(135deg, #904d00 0%, #ff8c00 100%);
+        }
+        .ambient-shadow {
+            box-shadow: 0 8px 24px rgba(25, 28, 29, 0.06);
+        }
+        .glass-nav {
+            background-color: rgba(248, 249, 250, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col pb-24 md:pb-0">
+<!-- TopAppBar from JSON -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl docked full-width top-0 z-50 shadow-sm sticky">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<!-- Avatar Leading -->
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center overflow-hidden border border-outline-variant/15">
+<img alt="Avatar" class="w-full h-full object-cover" data-alt="Professional headshot of a Middle Eastern man in a business suit, natural lighting, soft background focus, high quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCduTSVnFZqblVWx_wzq6Y2vIRebheapnP3LM14UpYbYhK8nxEik5iAF3a2m1sF17FSBLE03hPi_6PXADlAZeAcISFtEhCjgSJbbfpQr7ePdxMVVvwKE-RChk1jidsclbwtNccIV3xWwzM8oaEQvh-Ytkce2hRqc68CJC27dzITl3a0Ia9G_EkJoyoDgTbWLe0wMTOn-pDdqN0KxJkooShR-WINEtA-ex-1UfweowWTNS3OfTr_9tb5lt5i19OUhpNzENrQf6xPeFwk"/>
+</div>
+<div>
+<span class="block text-sm font-label text-on-surface-variant">مدير النظام</span>
+</div>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans','IBM_Plex_Sans_Arabic'] text-2xl font-bold text-navy-900 dark:text-white tracking-tight">
+                تقييم الأداء
+            </h1>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-orange-600 dark:text-orange-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+<div class="bg-slate-100 dark:bg-slate-800 h-[1px] w-full"></div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 py-8 flex flex-col gap-8">
+<!-- Header & Actions -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<div>
+<h2 class="text-[2rem] font-headline font-bold text-on-surface mb-2">تقرير التقييم الإجمالي</h2>
+<p class="text-on-surface-variant font-body">نظرة عامة على أداء الموظفين خلال الفترة المحددة.</p>
+</div>
+<!-- Export Actions -->
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-secondary text-on-secondary font-label font-medium hover:bg-secondary/90 transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="picture_as_pdf">picture_as_pdf</span>
+                    تصدير PDF
+                </button>
+<button class="flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-surface-container-lowest text-secondary border border-outline-variant/15 font-label font-medium hover:bg-surface-variant transition-colors shadow-sm">
+<span class="material-symbols-outlined text-lg" data-icon="table_view">table_view</span>
+                    تصدير Excel
+                </button>
+</div>
+</div>
+<!-- Filter Section -->
+<section class="bg-surface-container-low rounded-xl p-6">
+<h3 class="font-headline font-semibold text-lg text-on-surface mb-4">تصفية التقرير</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Month Select -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-title-md text-on-surface-variant">الشهر</label>
+<div class="relative">
+<select class="w-full h-12 bg-surface-container-high rounded-md px-4 appearance-none focus:outline-none focus:ring-2 focus:ring-primary/30 border-none font-body text-on-surface">
+<option>أكتوبر</option>
+<option>نوفمبر</option>
+<option>ديسمبر</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Year Select -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-title-md text-on-surface-variant">السنة</label>
+<div class="relative">
+<select class="w-full h-12 bg-surface-container-high rounded-md px-4 appearance-none focus:outline-none focus:ring-2 focus:ring-primary/30 border-none font-body text-on-surface">
+<option>2023</option>
+<option selected="">2024</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<div class="flex items-end">
+<button class="h-12 px-8 rounded-xl gradient-hero text-on-primary font-label font-medium shadow-[inset_0_2px_4px_rgba(255,255,255,0.1)] hover:opacity-90 transition-opacity w-full md:w-auto">
+                        تطبيق الفرز
+                    </button>
+</div>
+</div>
+</section>
+<!-- Employees List (Bento-ish Grid instead of basic list) -->
+<section class="flex flex-col gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Employee Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+<div class="absolute top-0 right-0 w-2 h-full bg-primary-container"></div>
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-primary" data-icon="person">person</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-lg text-on-surface">أحمد محمد</h4>
+<span class="font-label text-sm text-on-surface-variant">قسم تقنية المعلومات</span>
+</div>
+</div>
+<!-- Decorative Icon -->
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+<div class="flex items-end justify-between">
+<span class="font-label text-on-surface-variant">التقييم الإجمالي</span>
+<span class="font-headline text-[2rem] font-bold text-primary">92%</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-2 mt-4 overflow-hidden">
+<div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- Employee Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+<div class="absolute top-0 right-0 w-2 h-full bg-secondary"></div>
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-secondary" data-icon="person">person</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-lg text-on-surface">سارة خالد</h4>
+<span class="font-label text-sm text-on-surface-variant">الموارد البشرية</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+<div class="flex items-end justify-between">
+<span class="font-label text-on-surface-variant">التقييم الإجمالي</span>
+<span class="font-headline text-[2rem] font-bold text-secondary">85%</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-2 mt-4 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<!-- Employee Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 ambient-shadow relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+<div class="absolute top-0 right-0 w-2 h-full bg-tertiary"></div>
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-tertiary" data-icon="person">person</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-lg text-on-surface">عمر عبدالله</h4>
+<span class="font-label text-sm text-on-surface-variant">الشؤون المالية</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+<div class="flex items-end justify-between">
+<span class="font-label text-on-surface-variant">التقييم الإجمالي</span>
+<span class="font-headline text-[2rem] font-bold text-tertiary">88%</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-2 mt-4 overflow-hidden">
+<div class="bg-tertiary h-2 rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+<!-- Average Banner (Special Row) -->
+<div class="mt-8 gradient-hero rounded-xl p-8 flex flex-col md:flex-row items-center justify-between text-on-primary ambient-shadow">
+<div class="flex items-center gap-4 mb-4 md:mb-0">
+<div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+<span class="material-symbols-outlined text-3xl" data-icon="corporate_fare">corporate_fare</span>
+</div>
+<div>
+<h3 class="font-headline text-xl md:text-2xl font-bold">إجمالي متوسط التقييم على مستوى الإدارة</h3>
+<p class="font-body text-white/80 mt-1">يعكس الأداء العام لجميع الأقسام</p>
+</div>
+</div>
+<div class="bg-white/20 px-8 py-4 rounded-xl backdrop-blur-md border border-white/30">
+<span class="font-headline text-[2.5rem] font-extrabold tracking-tight">88%</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar from JSON (Mobile Only) -->
+<nav class="fixed bottom-0 w-full rounded-t-[2.5rem] z-50 tonal-layering-surface-container-low shadow-[0_-8px_24px_rgba(25,28,29,0.06)] bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl md:hidden">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3">
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:text-orange-400 transition-all active:scale-90 transition-transform">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="text-[12px] font-medium font-['Cairo']">الرئيسية</span>
+</button>
+<!-- Active State -->
+<button class="flex flex-col items-center justify-center bg-orange-500 text-white rounded-2xl px-5 py-2 scale-110 shadow-lg shadow-orange-500/20 active:scale-90 transition-transform">
+<span class="material-symbols-outlined mb-1" data-icon="analytics">analytics</span>
+<span class="text-[12px] font-medium font-['Cairo'] text-white">التقارير</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:text-orange-400 transition-all active:scale-90 transition-transform">
+<span class="material-symbols-outlined mb-1" data-icon="group">group</span>
+<span class="text-[12px] font-medium font-['Cairo']">الموظفين</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:text-orange-400 transition-all active:scale-90 transition-transform">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="text-[12px] font-medium font-['Cairo']">الإعدادات</span>
+</button>
+</div>
+</nav>
+<!-- Footer from JSON -->
+<footer class="w-full py-8 mt-auto mb-24 md:mb-0 bg-transparent flex flex-col items-center justify-center text-center px-8">
+<div class="border-t-4 border-orange-500 w-full pt-4 max-w-7xl">
+<p class="text-sm font-medium text-slate-600 dark:text-slate-400 font-['Cairo']">جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p>
+</div>
+</footer>
+</body></html>

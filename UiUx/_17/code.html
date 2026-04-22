@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تسجيل الدخول - الخدمة الذاتية</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Work+Sans:wght@400;500;600&amp;family=Cairo:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "tertiary": "#00658f",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#9cb4fe",
+                        "outline": "#897362",
+                        "on-background": "#191c1d",
+                        "tertiary-fixed": "#c7e7ff",
+                        "surface-tint": "#904d00",
+                        "outline-variant": "#ddc1ae",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#2f1500",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#00b5fc",
+                        "primary-container": "#ff8c00",
+                        "surface-container": "#edeeef",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#2a4486",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "inverse-primary": "#ffb77d",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb77d",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#564334",
+                        "inverse-surface": "#2e3132",
+                        "surface": "#f8f9fa",
+                        "secondary": "#435b9f",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "on-primary-container": "#623200",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "surface-dim": "#d9dadb",
+                        "primary": "#904d00",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-tertiary-container": "#004360",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#00174a",
+                        "primary-fixed": "#ffdcc3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "Cairo", "sans-serif"],
+                        "body": ["Work Sans", "Cairo", "sans-serif"],
+                        "label": ["Work Sans", "Cairo", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, theme('colors.primary'), theme('colors.primary-container'));
+        }
+        .glass-panel {
+            background: rgba(248, 249, 250, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex items-center justify-center p-6">
+<main class="w-full max-w-md bg-surface-container-lowest rounded-2xl p-8 relative overflow-hidden">
+<!-- Subtle decorative element -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container rounded-full mix-blend-multiply filter blur-3xl opacity-20 -mr-10 -mt-10"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-10 -ml-10 -mb-10"></div>
+<div class="relative z-10 flex flex-col items-center mb-10">
+<div class="w-20 h-20 rounded-2xl hero-gradient flex items-center justify-center mb-6 shadow-[0_8px_24px_rgba(25,28,29,0.06)]">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="settings" data-weight="fill" style="font-variation-settings: 'FILL' 1;">settings</span>
+</div>
+<h1 class="font-headline text-3xl font-bold text-on-surface mb-2">الخدمة الذاتية</h1>
+<p class="font-body text-on-surface-variant text-center text-sm">مرحباً بك مجدداً، يرجى تسجيل الدخول للوصول إلى حسابك.</p>
+</div>
+<form action="#" class="relative z-10 flex flex-col gap-6" method="POST">
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold text-on-surface" for="username">اسم المستخدم أو البريد الإلكتروني</label>
+<div class="relative">
+<div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="person">person</span>
+</div>
+<input class="w-full bg-surface-container-high border-none rounded-lg py-4 pl-4 pr-12 text-on-surface font-body focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" id="username" name="username" placeholder="أدخل اسم المستخدم" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold text-on-surface" for="password">كلمة المرور</label>
+<div class="relative">
+<div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="lock">lock</span>
+</div>
+<input class="w-full bg-surface-container-high border-none rounded-lg py-4 pl-4 pr-12 text-on-surface font-body focus:ring-2 focus:ring-primary/30 focus:outline-none transition-all" id="password" name="password" placeholder="أدخل كلمة المرور" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="form-checkbox h-5 w-5 text-primary rounded border-outline-variant focus:ring-primary/30 focus:ring-offset-0 bg-surface-container-highest" type="checkbox"/>
+<span class="font-body text-sm text-on-surface-variant">تذكرني</span>
+</label>
+<a class="font-body text-sm text-secondary font-semibold hover:text-on-secondary-container transition-colors" href="#">نسيت كلمة المرور؟</a>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-headline font-bold text-lg py-4 rounded-2xl mt-4 hover:bg-on-secondary-fixed-variant transition-colors shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] active:scale-[0.98]" type="submit">
+                تسجيل الدخول
+            </button>
+</form>
+</main><footer class="mt-8 text-center font-body text-sm relative z-10 text-secondary bg-secondary/5 py-6 px-4 rounded-xl"><hr class="mb-4 w-1/4 mx-auto" style="border-color: #FF8C00;"/>
+<p class="text-secondary font-semibold" dir="rtl">جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p>
+</footer>
+</body></html>

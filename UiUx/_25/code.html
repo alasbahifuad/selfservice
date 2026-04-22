@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>شاشة مهامي - الخدمة الذاتية</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;family=Work+Sans:wght@400;500;600&amp;family=Cairo:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#001e2e",
+                        "tertiary-container": "#00b5fc",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "outline": "#897362",
+                        "surface": "#f8f9fa",
+                        "outline-variant": "#ddc1ae",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container": "#edeeef",
+                        "secondary": "#435b9f",
+                        "on-surface": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary-container": "#2a4486",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "on-secondary-fixed": "#00174a",
+                        "on-primary-fixed": "#2f1500",
+                        "primary": "#904d00",
+                        "surface-tint": "#904d00",
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "inverse-surface": "#2e3132",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#00658f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#564334",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "on-background": "#191c1d",
+                        "primary-fixed": "#ffdcc3",
+                        "on-tertiary-container": "#004360",
+                        "secondary-container": "#9cb4fe",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#ffb77d",
+                        "inverse-primary": "#ffb77d",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary-fixed": "#c7e7ff",
+                        "secondary-fixed": "#dbe1ff",
+                        "background": "#f8f9fa",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#623200",
+                        "primary-container": "#ff8c00",
+                        "on-error": "#ffffff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"],
+                        "cairo": ["Cairo", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-[#f8f9fa] text-[#ff8c00] font-['Plus_Jakarta_Sans','Cairo'] font-bold text-2xl docked full-width top-0 tonal-transition-no-border flat no-shadows flex justify-between items-center w-full px-6 py-4 rtl sticky z-40 transition-all duration-300 ease-in-out">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-variant flex-shrink-0">
+<img alt="صورة الموظف الشخصية" class="w-full h-full object-cover" data-alt="professional portrait of a man in a modern office setting, soft natural lighting, shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2M3zlRtiEY4h3Q30GJMu_bv-RM9UaqIAk7r4R1A91bFIOQY5gmbcbp7Rrpw_8c8mLdDYjbyxS4D7mkL4kZDMH_H5rHFzDDSLySZ7OSyUUOffuLjHGqhgb6aGg4Wmx9qi_eDQvuaoup2VSZbgd7uyJ0KAvyDiyuY-RZCkmQQWAyy1Zo25TxG_w9-sAQNpbNWHrg-l03FVkyVkj2KjB13-b5beu61zPAf0izJRrZtnBC6k-PMi4O912hu1gsi5g8FbJ2tTatXzg7Guo"/>
+</div>
+<h1 class="font-cairo text-2xl text-[#435b9f] font-black">الخدمة الذاتية</h1>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors text-[#ff8c00]">
+<span class="material-symbols-outlined text-2xl" data-icon="notifications">notifications</span>
+</button>
+</header>
+<!-- Main Navigation (Web) -->
+<nav class="hidden md:flex justify-center gap-8 py-4 bg-surface-container-low mb-8 sticky top-[80px] z-30">
+<a class="flex flex-col items-center gap-1 text-slate-500 hover:text-[#ff8c00] transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="font-cairo font-medium">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#ff8c00] relative after:content-[''] after:absolute after:-bottom-2 after:w-full after:h-1 after:bg-[#ff8c00] after:rounded-t-full transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl fill">task_alt</span>
+<span class="font-cairo font-medium">المهام</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 hover:text-[#ff8c00] transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">payments</span>
+<span class="font-cairo font-medium">المصروفات</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500 hover:text-[#ff8c00] transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="font-cairo font-medium">الحساب</span>
+</a>
+</nav>
+<!-- Content Canvas -->
+<main class="flex-1 px-6 md:px-12 max-w-7xl mx-auto w-full pt-6 md:pt-0 pb-12 flex flex-col gap-12">
+<!-- Page Header -->
+<div class="mb-4">
+<h2 class="font-headline font-bold text-4xl text-on-surface mb-2">مهامي الحالية</h2>
+<p class="text-on-surface-variant text-lg">نظرة عامة على جميع التكليفات والمواعيد النهائية.</p>
+</div>
+<!-- Task Reports Summary (Bento Grid Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container-low transition-colors duration-300">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-[4rem] -z-10 group-hover:bg-primary/10 transition-colors"></div>
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-cairo font-bold text-xl text-on-surface">إجمالي المهام</h3>
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+</div>
+<div>
+<span class="font-headline font-bold text-[3.5rem] leading-none text-on-surface block mb-2">24</span>
+<span class="text-on-surface-variant font-medium">مهمة نشطة هذا الأسبوع</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container-low transition-colors duration-300">
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary/5 rounded-bl-[4rem] -z-10 group-hover:bg-tertiary/10 transition-colors"></div>
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-cairo font-bold text-xl text-on-surface">مكتملة</h3>
+<div class="w-12 h-12 rounded-full bg-[#10b981]/10 flex items-center justify-center text-[#10b981]">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+</div>
+<div>
+<span class="font-headline font-bold text-[3.5rem] leading-none text-on-surface block mb-2">16</span>
+<span class="text-[#10b981] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                        أداء ممتاز
+                    </span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container-low transition-colors duration-300">
+<div class="absolute top-0 right-0 w-24 h-24 bg-error/5 rounded-bl-[4rem] -z-10 group-hover:bg-error/10 transition-colors"></div>
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-cairo font-bold text-xl text-on-surface">متأخرة</h3>
+<div class="w-12 h-12 rounded-full bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</div>
+<div>
+<span class="font-headline font-bold text-[3.5rem] leading-none text-on-surface block mb-2">3</span>
+<span class="text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">priority_high</span>
+                        تتطلب اهتماماً فورياً
+                    </span>
+</div>
+</div>
+</section>
+<!-- Main Content Area: Tasks & Reminders -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- To-Do List (Left/Main Area) -->
+<section class="lg:col-span-2 flex flex-col gap-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="font-cairo font-bold text-2xl text-on-surface">القائمة الحالية</h3>
+<button class="text-primary-container font-cairo font-semibold flex items-center gap-1 hover:text-primary transition-colors">
+                        تصفية
+                        <span class="material-symbols-outlined text-sm">filter_list</span>
+</button>
+</div>
+<!-- Task Card: In Progress -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_8px_24px_rgba(25,28,29,0.06)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-primary-container"></div>
+<div class="flex justify-between items-start mb-6">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="px-3 py-1 bg-primary/10 text-primary font-cairo text-sm font-bold rounded-full">قيد التنفيذ</span>
+<span class="text-on-surface-variant text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                                    15 أكتوبر 2026
+                                </span>
+</div>
+<h4 class="font-cairo font-bold text-xl text-on-surface mb-2">مراجعة التقرير المالي للربع الثالث</h4>
+<p class="text-on-surface-variant line-clamp-2">تحليل ومراجعة جميع المصروفات والإيرادات للربع الثالث من العام الحالي وتقديم التقرير النهائي للإدارة.</p>
+</div>
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 mr-4">
+<span class="material-symbols-outlined text-3xl">request_quote</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/15 flex justify-between items-center">
+<div class="flex -space-x-2 space-x-reverse">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest overflow-hidden">
+<img alt="عضو الفريق" class="w-full h-full object-cover" data-alt="professional portrait of a woman smiling, modern corporate setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Gagm9BbnXG89i0K8odwjxk1BItsgCHd-4P9c0donfVLy402QqzB2DBaq7xXwOKS3bO8TWgloQH82HCJlIg8mA3E7Orbpop3mj28Qi_BMGj1BdZa2qNXvJV1FlgjQXS6GHVfKz0sUtEEzT3FFp4KnlciOgFTAlsahZBCILV457EEa912UVjOdFBnrGy5Mc6sWzc1FeQSFBmkpdeNRsDmSwc9BdY6PLQj2z1F-dW8qppl-2uNjrKGdtMTrSsyGXsO2rykcKLYr0FOg"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest overflow-hidden">
+<img alt="عضو الفريق" class="w-full h-full object-cover" data-alt="professional portrait of a man, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADr1pC-L9Q8tMN61dfZm-R0rHeWvFtj_wfCPR4OsINPZFjq11O66wUI_l-AJjPhPkPodXGTD_RqM8gYMOSliTRH9_Qcaq74_0wmU18UPsEDZmYPirxxMk4Y2V-pTOM9oMg9i3i9WcAArYnPfGKbBEoMD-dlWdg5p__bO1lwBN0nu6vBSyPSx0-jGJWkGF5a7i3twMYDZ1365bo10jR_QObldTmJe2cImdogz1LjSuvm_sL90-y5M2JrdByHetOW0_Gr27U-ytN1jQ8"/>
+</div>
+</div>
+<button class="px-6 py-2 bg-primary-container text-on-primary font-cairo font-bold rounded-xl hover:bg-primary transition-colors shadow-[inset_0_2px_4px_rgba(255,255,255,0.2)]">متابعة العمل</button>
+</div>
+</div>
+<!-- Task Card: Overdue -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_8px_24px_rgba(25,28,29,0.06)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-error"></div>
+<div class="flex justify-between items-start mb-6">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="px-3 py-1 bg-error/10 text-error font-cairo text-sm font-bold rounded-full">متأخرة</span>
+<span class="text-error text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_busy</span>
+                                    12 أكتوبر 2026
+                                </span>
+</div>
+<h4 class="font-cairo font-bold text-xl text-on-surface mb-2">تحديث سياسات الحضور والانصراف</h4>
+<p class="text-on-surface-variant line-clamp-2">إدراج التعديلات الجديدة الصادرة من الموارد البشرية في ملف السياسات وتعميمها.</p>
+</div>
+<div class="w-14 h-14 rounded-full bg-error/10 flex items-center justify-center text-error flex-shrink-0 mr-4">
+<span class="material-symbols-outlined text-3xl">policy</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-error font-medium text-sm">تأخير 3 أيام</span>
+<button class="px-6 py-2 bg-error text-on-primary font-cairo font-bold rounded-xl hover:bg-[#93000a] transition-colors shadow-[inset_0_2px_4px_rgba(255,255,255,0.2)]">إنجاز الآن</button>
+</div>
+</div>
+<!-- Task Card: Completed -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_8px_24px_rgba(25,28,29,0.06)] relative overflow-hidden opacity-75">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-[#10b981]"></div>
+<div class="flex justify-between items-start mb-6">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-2">
+<span class="px-3 py-1 bg-[#10b981]/10 text-[#10b981] font-cairo text-sm font-bold rounded-full">مكتملة</span>
+<span class="text-on-surface-variant text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                                    اليوم
+                                </span>
+</div>
+<h4 class="font-cairo font-bold text-xl text-on-surface mb-2 line-through decoration-on-surface-variant/50">تجهيز قاعة الاجتماعات للوفد الزائر</h4>
+<p class="text-on-surface-variant line-clamp-2">التأكد من جاهزية العرض المرئي وتوفير الضيافة اللازمة.</p>
+</div>
+<div class="w-14 h-14 rounded-full bg-[#10b981]/10 flex items-center justify-center text-[#10b981] flex-shrink-0 mr-4">
+<span class="material-symbols-outlined text-3xl">meeting_room</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/15 flex justify-end items-center">
+<button class="px-6 py-2 bg-surface-container-low text-secondary font-cairo font-bold rounded-xl hover:bg-surface-container-high transition-colors">عرض التفاصيل</button>
+</div>
+</div>
+</section>
+<!-- Notifications & Reminders (Right Sidebar) -->
+<aside class="flex flex-col gap-6">
+<div class="bg-surface-container-low rounded-2xl p-6 sticky top-[160px]">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h3 class="font-cairo font-bold text-xl text-on-surface">تذكيرات الإشعارات</h3>
+</div>
+<div class="space-y-4">
+<!-- Reminder Item -->
+<div class="flex gap-4 items-start p-4 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/15">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm">timer</span>
+</div>
+<div>
+<h5 class="font-cairo font-bold text-on-surface mb-1 text-sm">موعد تسليم التقرير</h5>
+<p class="text-on-surface-variant text-xs mb-2">تبقى ساعتان على تسليم تقرير الربع الثالث.</p>
+<span class="text-primary font-bold text-xs bg-primary/5 px-2 py-1 rounded">اليوم، 14:00</span>
+</div>
+</div>
+<!-- Reminder Item -->
+<div class="flex gap-4 items-start p-4 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/15">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm">groups</span>
+</div>
+<div>
+<h5 class="font-cairo font-bold text-on-surface mb-1 text-sm">اجتماع الفريق الأسبوعي</h5>
+<p class="text-on-surface-variant text-xs mb-2">اجتماع لمناقشة تحديثات السياسات الجديدة.</p>
+<span class="text-secondary font-bold text-xs bg-secondary/5 px-2 py-1 rounded">غداً، 09:00 ص</span>
+</div>
+</div>
+<!-- Reminder Item -->
+<div class="flex gap-4 items-start p-4 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/15">
+<div class="w-10 h-10 rounded-full bg-error/10 flex items-center justify-center text-error flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm">assignment_late</span>
+</div>
+<div>
+<h5 class="font-cairo font-bold text-on-surface mb-1 text-sm">تنبيه تأخير</h5>
+<p class="text-on-surface-variant text-xs mb-2">مهمة "تحديث السياسات" متأخرة عن موعدها.</p>
+<button class="text-error font-bold text-xs hover:underline mt-1">عرض المهمة</button>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden bg-white/80 backdrop-blur-md font-['Cairo'] text-sm font-medium docked full-width bottom-0 rounded-t-[1.5rem] bg-shift-tonal shadow-[0_-8px_24px_rgba(25,28,29,0.06)] scale-95 active:transition-transform fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 rtl">
+<a class="flex flex-col items-center justify-center text-[#435b9f] opacity-60 hover:scale-105 transition-transform w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">home</span>
+<span class="truncate">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#ff8c00]/10 text-[#ff8c00] rounded-2xl px-4 py-2 hover:scale-105 transition-transform w-20" href="#">
+<span class="material-symbols-outlined text-2xl mb-1 fill">task_alt</span>
+<span class="truncate">المهام</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#435b9f] opacity-60 hover:scale-105 transition-transform w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">payments</span>
+<span class="truncate">المصروفات</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#435b9f] opacity-60 hover:scale-105 transition-transform w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">person</span>
+<span class="truncate">الحساب</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="mt-auto border-t-4 border-primary-container bg-surface-container-lowest py-8 text-center hidden md:block">
+<p class="font-cairo font-bold text-secondary text-lg">جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p>
+</footer>
+</body></html>

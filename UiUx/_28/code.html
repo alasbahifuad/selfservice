@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تقييم الموظفين</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;900&amp;family=Plus+Jakarta+Sans:wght@500;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#623200",
+                        "secondary-container": "#9cb4fe",
+                        "secondary": "#435b9f",
+                        "outline": "#897362",
+                        "primary": "#904d00",
+                        "tertiary-fixed": "#c7e7ff",
+                        "inverse-primary": "#ffb77d",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "primary-container": "#ff8c00",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "on-background": "#191c1d",
+                        "tertiary-container": "#00b5fc",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#00658f",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "secondary-fixed": "#dbe1ff",
+                        "primary-fixed": "#ffdcc3",
+                        "on-secondary-container": "#2a4486",
+                        "on-primary-fixed": "#2f1500",
+                        "surface-container": "#edeeef",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "primary-fixed-dim": "#ffb77d",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e7e8e9",
+                        "surface": "#f8f9fa",
+                        "on-tertiary-container": "#004360",
+                        "background": "#f8f9fa",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "outline-variant": "#ddc1ae",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#564334",
+                        "surface-tint": "#904d00",
+                        "on-secondary-fixed": "#00174a",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Shared Component -->
+<header class="bg-orange-500 dark:bg-orange-600 docked full-width top-0 rounded-b-3xl shadow-lg shadow-orange-900/20 z-40 relative">
+<div class="flex justify-between items-center w-full px-6 py-4 flex-row-reverse">
+<!-- Leading Avatar -->
+<button class="flex items-center justify-center w-12 h-12 rounded-full overflow-hidden scale-95 active:duration-150 ring-2 ring-white/20 hover:ring-white/50 transition-all">
+<img alt="صورة الموظف الشخصية" class="w-full h-full object-cover" data-alt="Professional headshot of a confident male executive in a bright, modern corporate office setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0dDd2RyRIDly7zJqZjHDFLUBrvCpGW4Mg1n-rzXThPF7YWHQbWWFMEKVcaA3sMktmD9PLSXVmxHh1TVSgg_ggUU5fkxGiI7_VR83V3Ae_2S5S1OBsuqTwTwMTWT7tPz8JuiLb7bkEYoYRQpOevPaYgidD5x5TLxfYCgSV7IADbDeI8v8343ZE2RJSZEAC0hMaTezIIBev_Qrf2KzlAVOUfrRIlMudlS08StqfmYtXGUCq_J2Po08-vwTuB7A4SZa5oSnEmAjwlcsW"/>
+</button>
+<!-- Headline -->
+<h1 class="text-white font-black text-xl font-['IBM_Plex_Sans_Arabic'] font-bold text-2xl tracking-tight text-center flex-grow">
+                الخدمة الذاتية
+            </h1>
+<!-- Trailing Icon -->
+<button class="text-white hover:bg-orange-400 transition-colors w-12 h-12 rounded-full flex items-center justify-center scale-95 active:duration-150 relative">
+<span class="absolute top-3 right-3 w-2.5 h-2.5 bg-surface-container-lowest rounded-full shadow-sm"></span>
+<span class="material-symbols-outlined" data-icon="notifications" style="font-variation-settings: 'FILL' 1;">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-5xl mx-auto px-6 pt-10 pb-32 flex flex-col gap-10">
+<!-- Page Title & Context -->
+<header class="flex flex-col gap-2 px-2">
+<h2 class="text-3xl font-headline font-bold text-on-surface">تقييم الأداء الشهري</h2>
+<p class="text-on-surface-variant text-lg">الرجاء تحديد الموظف وتقييم أدائه بناءً على المعايير المعتمدة.</p>
+</header>
+<!-- Selection Filters (High-end input style) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-surface-container-low rounded-[2rem]">
+<div class="flex flex-col gap-3">
+<label class="text-on-surface-variant font-medium text-lg px-2" for="employee-select">اسم الموظف</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-high text-on-surface border-none rounded-xl py-4 pl-12 pr-6 text-lg focus:ring-2 focus:ring-primary/30 focus:outline-none transition-shadow shadow-sm cursor-pointer" id="employee-select">
+<option disabled="" selected="" value="">اختر الموظف المراد تقييمه</option>
+<option value="1">أحمد عبدالله السعيد</option>
+<option value="2">سارة خالد المطيري</option>
+<option value="3">محمد عبدالرحمن الفهد</option>
+</select>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-on-surface-variant font-medium text-lg px-2" for="month-select">شهر التقييم</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-high text-on-surface border-none rounded-xl py-4 pl-12 pr-6 text-lg focus:ring-2 focus:ring-primary/30 focus:outline-none transition-shadow shadow-sm cursor-pointer" id="month-select">
+<option value="10">أكتوبر 2023</option>
+<option selected="" value="11">نوفمبر 2023</option>
+<option value="12">ديسمبر 2023</option>
+</select>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</section>
+<!-- Interactive Evaluation Cards (The "Table" replacement) -->
+<section class="flex flex-col gap-6">
+<h3 class="text-xl font-bold text-secondary px-2 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">rule</span>
+                سجل المعايير
+            </h3>
+<!-- Criteria Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-[0_8px_24px_rgba(25,28,29,0.03)] hover:shadow-[0_8px_24px_rgba(25,28,29,0.06)] transition-shadow">
+<div class="flex items-start gap-4 max-w-lg">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">task_alt</span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<h4 class="text-xl font-bold text-on-surface">جودة وإنجاز العمل</h4>
+<p class="text-on-surface-variant leading-relaxed">مدى دقة العمل المنجز وخلوه من الأخطاء، والقدرة على تحقيق الأهداف المطلوبة في الوقت المحدد.</p>
+</div>
+</div>
+<div class="flex gap-2 lg:min-w-[240px] justify-end lg:justify-center" dir="ltr">
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</div>
+<!-- Criteria Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-[0_8px_24px_rgba(25,28,29,0.03)] hover:shadow-[0_8px_24px_rgba(25,28,29,0.06)] transition-shadow">
+<div class="flex items-start gap-4 max-w-lg">
+<div class="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl">schedule</span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<h4 class="text-xl font-bold text-on-surface">الالتزام والمواظبة</h4>
+<p class="text-on-surface-variant leading-relaxed">الالتزام بأوقات الحضور والانصراف، والتواجد الفعال خلال ساعات العمل الرسمية.</p>
+</div>
+</div>
+<div class="flex gap-2 lg:min-w-[240px] justify-end lg:justify-center" dir="ltr">
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</div>
+<!-- Criteria Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-[0_8px_24px_rgba(25,28,29,0.03)] hover:shadow-[0_8px_24px_rgba(25,28,29,0.06)] transition-shadow">
+<div class="flex items-start gap-4 max-w-lg">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<h4 class="text-xl font-bold text-on-surface">العمل الجماعي والتعاون</h4>
+<p class="text-on-surface-variant leading-relaxed">القدرة على العمل بفعالية ضمن فريق، وتبادل المعرفة، والمساهمة في بيئة عمل إيجابية.</p>
+</div>
+</div>
+<div class="flex gap-2 lg:min-w-[240px] justify-end lg:justify-center" dir="ltr">
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-variant transition-colors group">
+<span class="material-symbols-outlined text-surface-variant group-hover:text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</div>
+<!-- Notes Field -->
+<div class="mt-4">
+<label class="block text-on-surface-variant font-medium text-lg px-2 mb-3" for="evaluation-notes">ملاحظات إضافية (اختياري)</label>
+<textarea class="w-full bg-surface-container-high text-on-surface border-none rounded-xl p-6 text-lg focus:ring-2 focus:ring-primary/30 focus:outline-none transition-shadow shadow-sm resize-none placeholder-on-surface-variant/50" id="evaluation-notes" placeholder="أضف أي تفاصيل أو توصيات خاصة بأداء الموظف هنا..." rows="4"></textarea>
+</div>
+<!-- Submit Action Hero CTA -->
+<div class="mt-8">
+<button class="w-full bg-gradient-to-br from-[#904d00] to-[#ff8c00] text-on-primary text-xl font-bold rounded-[1.5rem] py-5 shadow-[inset_0_2px_4px_rgba(255,255,255,0.2)] hover:scale-[0.98] active:scale-[0.96] transition-transform duration-200 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+                    اعتماد التقييم
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shared Component -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl fixed bottom-0 w-full rounded-t-[2rem] shadow-[0_-8px_24px_rgba(0,0,0,0.06)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 flex-row-reverse">
+<!-- Tab 0: الرئيسية -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-orange-500 tap-highlight-transparent transition-transform duration-300 w-20 gap-1" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="home">home</span>
+<span class="font-['Cairo'] text-xs font-medium">الرئيسية</span>
+</a>
+<!-- Tab 1: الطلبات -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-orange-500 tap-highlight-transparent transition-transform duration-300 w-20 gap-1" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="description">description</span>
+<span class="font-['Cairo'] text-xs font-medium">الطلبات</span>
+</a>
+<!-- Tab 2: التقييم (ACTIVE) -->
+<a class="flex flex-col items-center justify-center text-orange-600 bg-orange-50 rounded-2xl px-4 py-2 tap-highlight-transparent transition-transform duration-300 w-24 gap-1 shadow-sm" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-['Cairo'] text-xs font-bold">التقييم</span>
+</a>
+<!-- Tab 3: الإعدادات -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-orange-500 tap-highlight-transparent transition-transform duration-300 w-20 gap-1" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="settings">settings</span>
+<span class="font-['Cairo'] text-xs font-medium">الإعدادات</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>سجل الحضور - الخدمة الذاتية</title>
+<!-- Google Fonts: Plus Jakarta Sans & Cairo/Work Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Design System -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#004c6c",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "tertiary": "#00658f",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#9cb4fe",
+                        "outline": "#897362",
+                        "on-background": "#191c1d",
+                        "tertiary-fixed": "#c7e7ff",
+                        "surface-tint": "#904d00",
+                        "outline-variant": "#ddc1ae",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#2f1500",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#00b5fc",
+                        "primary-container": "#ff8c00",
+                        "surface-container": "#edeeef",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#2a4486",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "inverse-primary": "#ffb77d",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb77d",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#564334",
+                        "inverse-surface": "#2e3132",
+                        "surface": "#f8f9fa",
+                        "secondary": "#435b9f",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "on-primary-container": "#623200",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary-fixed-dim": "#85cfff",
+                        "surface-dim": "#d9dadb",
+                        "primary": "#904d00",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-tertiary-container": "#004360",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#00174a",
+                        "primary-fixed": "#ffdcc3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "Cairo", "sans-serif"],
+                        "body": ["Work Sans", "Cairo", "sans-serif"],
+                        "label": ["Work Sans", "Cairo", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Hide scrollbar for clean UI */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col">
+<!-- TopAppBar (From JSON) -->
+<header class="bg-orange-500 dark:bg-orange-600 text-white dark:text-white font-['Plus_Jakarta_Sans'] font-bold text-lg docked full-width top-0 rounded-b-none no-line-rule tonal-transition shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-row-reverse justify-between items-center w-full px-6 py-4 sticky z-40">
+<div class="flex items-center gap-3 flex-row-reverse">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/20 overflow-hidden border-2 border-white/30">
+<img alt="صورة الموظف" class="w-full h-full object-cover" data-alt="Professional portrait of a confident middle-eastern man in business casual attire with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6a5KS77JwB-YzxJ-ModjQuVtuSQ2Glat9gWYEE2SuUbKTaX1o2Q5oD6q-5dPo62NwtK0TN--3gUN295nbH1skn6GUgPxqHUnR1j5N09Jj2Cr0oLCU0yHphkd9BnwVRW9lSQRCzOiW_pkwfqiehvlawowbx0UczSpsYPJdolVWsn7r5oI5BITYcVNx8F-Z8XsweorVkwMEVmjgIhsEr3YZHl0gB1RU_IVm1K4Ry5NuTTTzvWludLGumVRPo86Tb_Y3aiBbGw9JyQ60"/>
+</div>
+</div>
+<h1 class="text-xl font-black text-white tracking-tight">الخدمة الذاتية</h1>
+<button class="hover:bg-orange-400 dark:hover:bg-orange-500 active:scale-95 transition-all duration-200 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 max-w-3xl mx-auto w-full px-6 pt-10 pb-32 space-y-10">
+<!-- Header & Monthly Filter -->
+<section class="flex flex-col space-y-6">
+<div class="flex justify-between items-end">
+<h2 class="text-3xl font-headline font-black text-on-surface tracking-tight">سجل الحضور</h2>
+</div>
+<!-- Sleek Glassmorphism Month Selector -->
+<div class="flex bg-surface-container-low p-1.5 rounded-[1.5rem] overflow-x-auto hide-scrollbar w-full relative">
+<div class="flex space-x-reverse space-x-2 w-max">
+<button class="px-8 py-3 rounded-[1.25rem] bg-surface-container-lowest text-primary font-bold shadow-[0_4px_12px_rgba(25,28,29,0.04)] transition-all">
+                        أكتوبر 2023
+                    </button>
+<button class="px-8 py-3 rounded-[1.25rem] text-on-surface-variant font-medium hover:bg-surface-variant/40 transition-all">
+                        سبتمبر 2023
+                    </button>
+<button class="px-8 py-3 rounded-[1.25rem] text-on-surface-variant font-medium hover:bg-surface-variant/40 transition-all">
+                        أغسطس 2023
+                    </button>
+</div>
+</div>
+</section>
+<!-- Attendance Cards List (High-End Asymmetric Layout) -->
+<section class="space-y-6">
+<!-- Card: Present (Using Secondary Blue for Institutional Success as per Config) -->
+<article class="bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-col sm:flex-row gap-5 relative overflow-hidden group hover:shadow-[0_12px_32px_rgba(25,28,29,0.08)] transition-shadow duration-300">
+<!-- Date Block -->
+<div class="flex flex-col items-center justify-center bg-surface-container-low rounded-xl py-4 px-5 w-full sm:w-24 shrink-0">
+<span class="text-xs text-on-surface-variant font-bold mb-1">الخميس</span>
+<span class="text-3xl font-headline font-black text-on-surface leading-none">26</span>
+<span class="text-xs text-on-surface-variant mt-1">أكتوبر</span>
+</div>
+<!-- Data & Details -->
+<div class="flex-1 flex flex-col justify-center space-y-4">
+<div class="flex items-center gap-8">
+<div class="flex items-start gap-3">
+<div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">login</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant mb-0.5">تسجيل الدخول</span>
+<span class="text-base font-bold text-on-surface">07:55 ص</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">logout</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant mb-0.5">تسجيل الخروج</span>
+<span class="text-base font-bold text-on-surface">04:05 م</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">fingerprint</span>
+<span>بصمة جهاز (Bio)</span>
+<span class="w-1 h-1 rounded-full bg-surface-variant mx-2"></span>
+<span class="material-symbols-outlined text-[16px] text-outline">business</span>
+<span>المقر الرئيسي</span>
+</div>
+</div>
+<!-- Status Pill -->
+<div class="flex items-start sm:items-center justify-start sm:justify-end">
+<div class="bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-bold">حاضر</span>
+</div>
+</div>
+</article>
+<!-- Card: Late (Orange/Primary) -->
+<article class="bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-col sm:flex-row gap-5 relative overflow-hidden group hover:shadow-[0_12px_32px_rgba(25,28,29,0.08)] transition-shadow duration-300 border-r-4 border-primary">
+<!-- Date Block -->
+<div class="flex flex-col items-center justify-center bg-surface-container-low rounded-xl py-4 px-5 w-full sm:w-24 shrink-0">
+<span class="text-xs text-on-surface-variant font-bold mb-1">الأربعاء</span>
+<span class="text-3xl font-headline font-black text-on-surface leading-none">25</span>
+<span class="text-xs text-on-surface-variant mt-1">أكتوبر</span>
+</div>
+<!-- Data & Details -->
+<div class="flex-1 flex flex-col justify-center space-y-4">
+<div class="flex items-center gap-8">
+<div class="flex items-start gap-3">
+<div class="bg-primary-fixed/30 w-10 h-10 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">login</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant mb-0.5">تسجيل الدخول</span>
+<span class="text-base font-bold text-on-surface">08:42 ص</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">logout</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant mb-0.5">تسجيل الخروج</span>
+<span class="text-base font-bold text-on-surface">04:10 م</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>تطبيق الجوال (GPS)</span>
+</div>
+</div>
+<!-- Status Pill -->
+<div class="flex flex-col items-start sm:items-end justify-center gap-2">
+<div class="bg-primary-fixed text-on-primary-fixed-variant px-4 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<span class="text-sm font-bold">متأخر</span>
+</div>
+<span class="text-xs font-medium text-primary bg-primary-fixed/30 px-3 py-1 rounded-full">- 42 دقيقة</span>
+</div>
+</article>
+<!-- Card: Absent (Red/Error) -->
+<article class="bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0_8px_24px_rgba(25,28,29,0.06)] flex flex-col sm:flex-row gap-5 relative overflow-hidden group hover:shadow-[0_12px_32px_rgba(25,28,29,0.08)] transition-shadow duration-300 border-r-4 border-error opacity-90">
+<!-- Date Block -->
+<div class="flex flex-col items-center justify-center bg-surface-container-low rounded-xl py-4 px-5 w-full sm:w-24 shrink-0">
+<span class="text-xs text-on-surface-variant font-bold mb-1">الثلاثاء</span>
+<span class="text-3xl font-headline font-black text-on-surface leading-none">24</span>
+<span class="text-xs text-on-surface-variant mt-1">أكتوبر</span>
+</div>
+<!-- Data & Details -->
+<div class="flex-1 flex flex-col justify-center space-y-4">
+<div class="flex items-center gap-8 opacity-50 grayscale">
+<div class="flex items-start gap-3">
+<div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">login</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant mb-0.5">تسجيل الدخول</span>
+<span class="text-base font-bold text-on-surface">--:--</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">logout</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant mb-0.5">تسجيل الخروج</span>
+<span class="text-base font-bold text-on-surface">--:--</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Status Pill -->
+<div class="flex items-start sm:items-center justify-start sm:justify-end">
+<div class="bg-error-container text-on-error-container px-4 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<span class="text-sm font-bold">غائب</span>
+</div>
+</div>
+</article>
+</section>
+</main><footer class="w-full max-w-3xl mx-auto px-6 pb-24 text-center text-on-surface-variant/60 font-body text-sm bg-surface-container-low/50 pt-12">
+<div class="max-w-md mx-auto">
+<hr class="border-blue-700/30 mb-6"/>
+<p class="text-blue-700 font-medium">جميع الحقوق محفوظة @2026 - فؤاد الأصبحي</p>
+</div>
+</footer>
+<!-- BottomNavBar (From JSON) -->
+<!-- Displayed on mobile, mapped to active tab "الحضور" (Index 1) -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-[1.5rem] z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl font-['Cairo'] text-xs font-medium shadow-[0_-4px_20px_rgba(0,0,0,0.04)] no-line-rule background-shift flex flex-row-reverse justify-around items-center h-20 px-4 pb-safe">
+<!-- Tab 0: Inactive -->
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span>الرئيسية</span>
+</a>
+<!-- Tab 1: Active (Attendance) -->
+<a class="flex flex-col items-center justify-center bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-300 rounded-2xl px-4 py-1 active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span>الحضور</span>
+</a>
+<!-- Tab 2: Inactive -->
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1">notifications</span>
+<span>التنبيهات</span>
+</a>
+<!-- Tab 3: Inactive -->
+<a class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 px-4 py-1 hover:text-orange-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span>الملف الشخصي</span>
+</a>
+</nav>
+</body></html>
